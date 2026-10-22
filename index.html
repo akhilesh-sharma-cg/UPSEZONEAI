@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>SAMIKSHA AI — India's Sovereign UPSC Cognitive Platform</title>
+    <title>Aspirora AI — Rise Beyond Your Rank</title>
     <meta
-        content="AI-powered UPSC preparation: ₹99 Book Library, Interactive Hover Mind Maps, Dual Marquee Video Hub, All-India Leaderboard, and Verified Topper Cadre Dossiers."
+        content="AI-powered UPSC preparation with study materials, interactive mind maps, mock tests, and verified topper insights."
         name="description" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -2123,7 +2123,7 @@
             border-top: 1px solid var(--outline);
         }
 
-        /* Why Aspirants Prefer Samiksha AI Cards Grid */
+        /* Why Aspirants Prefer Aspirora AI Cards Grid */
         .why-prefer-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -4829,7 +4829,1216 @@
             }
         }
 
-    </style>
+
+        /* Responsive inline navigation: never collapse into a dropdown */
+        .nav-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.55rem 1rem;
+            padding: 0.65rem clamp(0.65rem, 2vw, 1.5rem);
+        }
+
+        .brand-logo { flex: 0 0 auto; }
+
+        .nav-menu {
+            position: static !important;
+            inset: auto !important;
+            order: 3;
+            flex: 1 0 100%;
+            width: 100% !important;
+            height: auto !important;
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.2rem clamp(0.35rem, 1.1vw, 0.9rem);
+            padding: 0.15rem 0 0.25rem !important;
+            margin: 0;
+            overflow: visible !important;
+            background: transparent !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            transform: none !important;
+            right: auto !important;
+            transition: none !important;
+        }
+
+        .nav-link {
+            display: inline-block !important;
+            white-space: nowrap;
+            font-size: clamp(0.68rem, 0.9vw, 0.81rem);
+            line-height: 1.4;
+            padding: 0.28rem 0.35rem !important;
+            border: 0 !important;
+            background: transparent !important;
+        }
+
+        .nav-link::after { display: block !important; }
+        .nav-menu-mobile-cta { display: none !important; }
+        .nav-hamburger, .nav-mobile-backdrop { display: none !important; }
+        .nav-actions { margin-left: auto; gap: 0.4rem; }
+        .nav-pay-btn { max-width: 100%; }
+
+        @media (max-width: 600px) {
+            .nav-container { gap: 0.35rem; }
+            .brand-logo { font-size: 1rem; gap: 0.35rem; }
+            .brand-logo svg { width: 27px; height: 27px; }
+            .nav-actions { gap: 0.3rem; }
+            #navUnlockBtn { padding: 0 0.5rem; font-size: 0.68rem; height: 32px; }
+            .theme-toggle { width: 32px; height: 32px; }
+            .nav-menu { justify-content: flex-start; gap: 0.1rem 0.35rem; }
+            .nav-link { font-size: 0.68rem; padding: 0.25rem 0.3rem !important; }
+        }
+
+    
+
+        /* Other battles: seamless circular-loop ticker with calm, study-friendly motion */
+        .other-battles-panel { margin-top: 1.35rem; padding: 1.25rem; border: 1px solid var(--outline); border-radius: 20px; background: radial-gradient(ellipse at 10% 0%, color-mix(in srgb, var(--primary) 7%, transparent), transparent 55%), var(--surface); overflow: hidden; position: relative; }
+        .other-battles-panel:after { content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none; background:linear-gradient(115deg, transparent 20%, color-mix(in srgb, var(--primary) 4%, transparent) 50%, transparent 78%); opacity:.65; }
+        .other-battles-heading { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1rem; }
+        .other-battles-heading h3 { margin:.35rem 0 .2rem; color:var(--on-surface); font-size:1.15rem; font-weight:800; }
+        .other-battles-heading p { margin:0; color:var(--on-surface-variant); font-size:.86rem; }
+        .other-battles-eyebrow { display:inline-flex; align-items:center; gap:.45rem; font-size:.7rem; font-weight:800; letter-spacing:.09em; color:var(--primary); }
+        .other-battles-eyebrow .live-dot { width:7px; height:7px; }
+        .other-battles-count { flex-shrink:0; color:#15803d; background:rgba(22,163,74,.1); border:1px solid rgba(22,163,74,.2); padding:.42rem .65rem; border-radius:999px; font-size:.68rem; font-weight:800; letter-spacing:.04em; }
+        /* Seamless, never-ending horizontal battle ticker: duplicated cards make the loop continuous. */
+        .other-battles-viewport { height:225px; overflow:hidden; position:relative; z-index:1; padding:.25rem 0 .7rem; mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%); }
+        .other-battles-track { display:flex; align-items:stretch; gap:1rem; width:max-content; height:100%; will-change:transform; animation:battleTickerScroll 38s linear infinite; }
+        .other-battles-viewport:hover .other-battles-track, .other-battles-viewport:focus-within .other-battles-track { animation-play-state:paused; }
+        .other-battle-card { position:relative; flex:0 0 clamp(220px, 25vw, 275px); width:clamp(220px, 25vw, 275px); min-height:190px; margin:0; overflow:hidden; padding:1rem; border:1px solid var(--outline); border-radius:15px; background:var(--surface-container-low, var(--surface-low)); transform:none; backface-visibility:hidden; transition:border-color .25s ease, box-shadow .25s ease; }
+        .other-battle-card:hover { border-color:var(--primary); box-shadow:var(--shadow-md); }
+        .other-battle-card:after { content:""; position:absolute; inset:-1px; border-radius:inherit; border:1px solid transparent; pointer-events:none; animation:battleCardOrbit 5.5s linear infinite; }
+        .other-battle-score strong { animation:battleScoreBreathe 3.8s ease-in-out infinite; }
+        .other-battle-score strong:nth-of-type(2) { animation-delay:1.9s; }
+        .other-battle-card-top, .other-battle-foot { display:flex; align-items:center; justify-content:space-between; gap:.5rem; }
+        .other-battle-subject { color:var(--on-surface-variant); font-size:.68rem; font-weight:800; letter-spacing:.035em; }
+        .other-battle-live { color:#15803d; font-size:.63rem; font-weight:900; }
+        .other-battle-live:before { content:''; display:inline-block; width:6px; height:6px; border-radius:50%; background:#16a34a; margin:0 .3rem .05rem 0; animation:pulseDot 1.5s infinite; }
+        .other-battle-players { display:flex; align-items:center; justify-content:space-between; gap:.35rem; margin:1rem 0 .6rem; color:var(--on-surface); font-size:.78rem; font-weight:700; }
+        .other-battle-players span { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+        .other-battle-players b { color:var(--primary); font-size:.65rem; }
+        .other-battle-score { display:flex; align-items:center; justify-content:center; gap:.85rem; color:var(--on-surface-variant); margin-bottom:.8rem; }
+        .other-battle-score strong { min-width:34px; text-align:center; font-size:1.55rem; line-height:1.1; color:var(--on-surface); }
+        .other-battle-progress { height:5px; overflow:hidden; border-radius:999px; background:var(--outline); margin-bottom:.75rem; }
+        .other-battle-progress span { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg,var(--primary),#22c55e); }
+        .other-battle-foot { color:var(--on-surface-variant); font-size:.68rem; }
+        .other-battles-bottom { display:flex; justify-content:space-between; gap:.75rem; padding-top:.45rem; color:var(--on-surface-variant); font-size:.72rem; }
+        /* Moves exactly one set of cards; the duplicate set follows seamlessly with no visible reset. */
+        @keyframes battleTickerScroll { from { transform:translateX(0); } to { transform:translateX(calc(-50% - .5rem)); } }
+        @keyframes battleCardOrbit { 0% { border-top-color:color-mix(in srgb, var(--primary) 0%, transparent); } 25% { border-right-color:color-mix(in srgb, var(--primary) 35%, transparent); } 50% { border-bottom-color:color-mix(in srgb, var(--primary) 0%, transparent); } 75% { border-left-color:color-mix(in srgb, var(--primary) 30%, transparent); } 100% { border-top-color:color-mix(in srgb, var(--primary) 0%, transparent); } }
+        @keyframes battleScoreBreathe { 0%,100% { text-shadow:0 0 0 transparent; } 50% { text-shadow:0 0 14px color-mix(in srgb, var(--primary) 18%, transparent); } }
+        @media (prefers-reduced-motion: reduce) { .other-battles-track, .other-battle-live:before, .other-battle-card:after, .other-battle-score strong { animation:none !important; } .other-battles-viewport { mask-image:none; overflow-x:auto; } .other-battles-track { width:max-content; transform:none; } .other-battle-card { position:relative; margin:0; transform:none !important; } }
+        @media (max-width:640px) { .other-battles-panel { padding:.9rem; border-radius:15px; } .other-battles-heading { align-items:flex-start; } .other-battles-heading h3 { font-size:1.02rem; } .other-battles-heading p { max-width:240px; font-size:.78rem; } .other-battles-count { font-size:.58rem; padding:.35rem .48rem; } .other-battles-viewport { height:220px; } .other-battle-card { flex-basis:220px; width:220px; min-height:185px; } .other-battles-bottom { font-size:.65rem; flex-wrap:wrap; } }
+
+        /* Premium-only: remove the feed from layout until Premium is active. */
+        .battle-section:not(.unlocked) #otherBattlesPanel { display:none; }
+        .battle-section.unlocked #otherBattlesPanel { display:block; }
+        .other-battles-panel.battle-feed-highlight { animation:battleFeedNudge .85s ease; }
+        @keyframes battleFeedNudge { 0%,100% { box-shadow:none; } 35% { box-shadow:0 0 0 3px color-mix(in srgb, var(--primary) 28%, transparent); border-color:var(--primary); } }
+
+        /* Mind-map hover panel styled like the supplied reference */
+        .mindmap-workbench { grid-template-columns: minmax(220px, .78fr) minmax(0, 1.8fr); align-items: stretch; }
+        .mindmap-section .section-header { text-align: center; }
+        .map-canvas { min-width: 0; padding: 1.25rem; background: radial-gradient(ellipse at top, rgba(255,106,0,.07), transparent 65%), var(--surface); }
+        .mindmap-tree { width: 100%; align-items: stretch; gap: .55rem; }
+        .root-node { align-self: center; width: min(100%, 540px); text-align: center; padding: .85rem 1rem; border: 1px solid #ff9a42; border-radius: 12px; font-size: .96rem; line-height: 1.45; box-shadow: 0 0 0 1px rgba(255,106,0,.12), 0 8px 24px rgba(255,106,0,.18); }
+        .synapse-svg { width: 100%; height: 54px; margin: 0; overflow: visible; }
+        .synapse-line { stroke: var(--primary); stroke-width: 2; stroke-dasharray: 5 6; opacity: .9; animation: dash-flow 1.8s linear infinite; }
+        .branches-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; }
+        .branch-card { background: linear-gradient(160deg, var(--surface-low), var(--surface)); border: 1px solid var(--outline); border-top: 3px solid var(--primary); border-radius: 10px; padding: .85rem; min-width: 0; box-shadow: 0 5px 16px rgba(15,23,42,.05); }
+        .branch-card h5 { font-size: .78rem; text-transform: uppercase; letter-spacing: .035em; line-height: 1.35; }
+        .branch-card ul { font-size: .75rem; line-height: 1.45; overflow-wrap: anywhere; }
+        .topic-item { border-left: 3px solid transparent; }
+        .topic-item:hover, .topic-item.active { border-left-color: var(--primary); transform: translateX(4px); }
+        @media (max-width: 900px) {
+          .mindmap-workbench { grid-template-columns: 1fr; }
+          .topic-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); }
+          .branches-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+        }
+        @media (max-width: 560px) {
+          .topic-list, .branches-grid { grid-template-columns: 1fr; }
+          .map-canvas { padding: .8rem; }
+          .synapse-svg { height: 32px; }
+          .root-node { font-size: .86rem; }
+        }
+
+        /* Full-width mind map layout: topic selector on top, complete map below */
+        .mindmap-section .container { width: min(100% - 2rem, 1500px); max-width: 1500px; }
+        .mindmap-workbench { display: flex !important; flex-direction: column !important; width: 100%; gap: 1rem; padding: clamp(.75rem, 2vw, 1.5rem); }
+        .mindmap-workbench .topic-list { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; gap: .75rem; }
+        .mindmap-workbench .topic-item { min-width: 0; min-height: 78px; height: 100%; }
+        .mindmap-workbench .map-canvas { display: block; width: 100%; min-height: 390px; padding: clamp(.8rem, 2vw, 1.6rem); overflow: hidden; }
+        .mindmap-tree { width: 100%; min-height: 350px; display: flex; flex-direction: column; justify-content: center; }
+        .mindmap-tree .root-node { width: min(100%, 760px); margin-inline: auto; }
+        .mindmap-tree .synapse-svg { width: 100%; height: clamp(55px, 7vw, 100px); }
+        .mindmap-tree .branches-grid { display: grid; width: 100%; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.65rem, 1.5vw, 1.25rem); }
+        .mindmap-tree .branch-card { min-height: 150px; padding: clamp(.8rem, 1.5vw, 1.2rem); }
+        .mindmap-tree .branch-card h5 { font-size: clamp(.78rem, 1vw, .95rem); }
+        .mindmap-tree .branch-card ul { font-size: clamp(.75rem, .95vw, .9rem); line-height: 1.6; }
+        @media (max-width: 900px) {
+          .mindmap-workbench .topic-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+          .mindmap-tree .branches-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+          .mindmap-workbench .map-canvas { min-height: 0; }
+        }
+        @media (max-width: 560px) {
+          .mindmap-section .container { width: min(100% - 1rem, 1500px); }
+          .mindmap-workbench .topic-list, .mindmap-tree .branches-grid { grid-template-columns: 1fr; }
+          .mindmap-tree { min-height: 0; }
+          .mindmap-tree .branch-card { min-height: 0; }
+        }
+
+
+        /* Screenshot-matched hover mind map: compact topic tabs, centered orange root, branching cards */
+        .mindmap-section { background: radial-gradient(ellipse at 50% 0%, rgba(255,106,0,.09), transparent 55%), var(--surface); }
+        .mindmap-section .container { width: min(100% - 2rem, 1600px) !important; max-width: 1600px !important; }
+        .mindmap-workbench { background: linear-gradient(180deg, rgba(15,23,42,.035), transparent 45%), var(--surface-low) !important; border: 1px solid var(--outline); border-radius: 18px; }
+        .mindmap-workbench .topic-list { display:grid !important; grid-template-columns:repeat(4,minmax(0,1fr)) !important; gap:.45rem !important; }
+        .mindmap-workbench .topic-item { min-height:unset !important; padding:.65rem .8rem !important; border:1px solid var(--outline) !important; border-top:2px solid transparent !important; border-radius:8px !important; background:var(--surface) !important; transform:none !important; transition:border-color .22s ease, background .22s ease, box-shadow .22s ease !important; }
+        .mindmap-workbench .topic-item:hover, .mindmap-workbench .topic-item.active { border-color:var(--primary) !important; border-top-color:var(--primary) !important; background:var(--primary-container) !important; box-shadow:0 5px 18px rgba(255,106,0,.13) !important; }
+        .mindmap-workbench .topic-item strong { font-size:clamp(.68rem,.85vw,.82rem) !important; line-height:1.35; }
+        .mindmap-workbench .topic-item div[style] { font-size:clamp(.6rem,.72vw,.7rem) !important; line-height:1.35; margin-top:.2rem; }
+        .mindmap-workbench .map-canvas { min-height:420px !important; border-radius:12px !important; background:radial-gradient(ellipse at 50% 0%, rgba(255,106,0,.08), transparent 62%), var(--surface) !important; }
+        .mindmap-tree { gap:.35rem !important; }
+        .mindmap-tree .root-node { width:min(100%,760px) !important; padding:1rem 1.3rem !important; border:1.5px solid #ff8a24 !important; border-radius:10px !important; background:linear-gradient(135deg,rgba(255,106,0,.12),var(--surface)) !important; box-shadow:0 0 0 1px rgba(255,106,0,.1),0 8px 24px rgba(255,106,0,.12) !important; font-size:clamp(.82rem,1.15vw,1rem) !important; font-weight:800; }
+        .mindmap-tree .synapse-svg { height:clamp(58px,6vw,86px) !important; overflow:visible !important; }
+        .mindmap-tree .synapse-line { stroke:#ff8a24 !important; stroke-width:1.8 !important; stroke-dasharray:4 6 !important; animation:dash-flow 1.7s linear infinite !important; }
+        .mindmap-tree .branches-grid { grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:clamp(.6rem,1.2vw,1rem) !important; }
+        .mindmap-tree .branch-card { position:relative; border:1px solid rgba(255,138,36,.45) !important; border-top:3px solid #ff8a24 !important; border-radius:9px !important; background:linear-gradient(145deg,var(--surface-low),var(--surface)) !important; box-shadow:0 6px 18px rgba(15,23,42,.06) !important; min-height:145px !important; }
+        .mindmap-tree .branch-card h5 { color:var(--on-surface) !important; margin-bottom:.55rem; }
+        .mindmap-tree .branch-card ul { padding-left:1rem; margin:0; }
+        .mindmap-tree .branch-card li { margin:.22rem 0; }
+        @media(max-width:760px) { .mindmap-workbench .topic-list { grid-template-columns:repeat(2,minmax(0,1fr)) !important; } .mindmap-tree .branches-grid { grid-template-columns:1fr !important; } .mindmap-workbench .map-canvas { min-height:0 !important; } .mindmap-tree .synapse-svg { height:42px !important; } }
+        @media(prefers-reduced-motion:reduce) { .mindmap-tree .synapse-line { animation:none !important; } }
+
+
+        /* Compact, polished benefit cards */
+        .why-prefer-grid { gap: 1rem; }
+        .why-prefer-card {
+            border-radius: 18px;
+            border: 1px solid rgba(255,106,0,.18);
+            background: linear-gradient(145deg, var(--surface) 0%, var(--surface-low) 100%);
+            box-shadow: 0 8px 24px rgba(15,23,42,.06);
+            transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+        }
+        .why-prefer-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 14px 30px rgba(255,106,0,.13);
+        }
+        .why-prefer-title { line-height: 1.25; }
+        .why-prefer-desc { line-height: 1.5; }
+        .why-prefer-comp-tag { font-weight: 700; }
+        @media (prefers-reduced-motion: reduce) {
+            .why-prefer-card { transition: none; }
+            .why-prefer-card:hover { transform: none; }
+        }
+
+        /* Premium editorial redesign: verified topper dossiers + seamless ranker ticker */
+        .success-section {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(ellipse at 12% 0%, rgba(255,106,0,.08), transparent 38%), var(--surface-low);
+        }
+        .success-section .section-header { max-width: 850px; margin: 0 auto 1.8rem; text-align: center; }
+        .success-section .section-title { letter-spacing: -.035em; }
+        .success-section .section-subtitle { max-width: 680px; margin-inline: auto; }
+        .topper-cadre-layout { display: flex; flex-direction: column; gap: 1.2rem; }
+        .topper-selector-col {
+            display: flex; flex-direction: row; align-items: stretch; gap: .9rem;
+            overflow-x: auto; overflow-y: hidden; padding: .35rem .15rem .9rem;
+            scrollbar-width: thin; scrollbar-color: var(--primary) transparent;
+            scroll-behavior: auto; overscroll-behavior-inline: contain;
+            border-bottom: 1px solid var(--outline);
+        }
+        .topper-selector-col .cadre-card-item {
+            flex: 0 0 clamp(260px, 29vw, 340px); min-width: 0; min-height: 100px;
+            border-radius: 18px; background: linear-gradient(145deg, var(--surface), var(--surface-low));
+            border-color: color-mix(in srgb, var(--outline) 78%, var(--primary) 22%);
+        }
+        .topper-selector-col .cadre-card-item:hover { transform: translateY(-3px); }
+        .topper-selector-col .cadre-card-item.active { transform: translateY(-3px); }
+        .dossier-card {
+            width: 100%; min-width: 0; border-radius: 24px;
+            border: 1px solid color-mix(in srgb, var(--primary) 28%, var(--outline));
+            box-shadow: 0 18px 55px rgba(15, 23, 42, .09);
+            transition: opacity .18s ease, transform .18s ease;
+        }
+        .dossier-profile-header { gap: 1.1rem; }
+        .dossier-quote-box { border-left: 3px solid var(--primary); border-radius: 0 14px 14px 0; }
+        .topper-ticker-hint { display:flex; align-items:center; justify-content:center; gap:.5rem; color:var(--on-surface-variant); font-size:.76rem; margin:-.25rem 0 .2rem; }
+        .topper-ticker-hint .ticker-dot { width:7px; height:7px; border-radius:50%; background:var(--primary); box-shadow:0 0 0 4px rgba(255,106,0,.12); }
+        @media (max-width: 700px) {
+            .topper-selector-col .cadre-card-item { flex-basis: 82vw; }
+            .dossier-card { padding: 1rem; }
+            .success-section .section-title { font-size: clamp(1.55rem, 7vw, 2.2rem); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .topper-selector-col { scroll-behavior: auto; }
+            .cadre-card-item, .dossier-card { transition: none !important; }
+        }
+
+
+/* CREATIVE TOPPER ORIGIN MAP + INTERACTIVE EXPERIENCE */
+.success-section{position:relative;overflow:hidden;background:radial-gradient(ellipse at 12% 8%,rgba(255,106,0,.09),transparent 34%),var(--surface-low)}
+.success-section .section-header{margin-bottom:1.35rem}
+.topper-cadre-layout{grid-template-columns:minmax(270px,320px) minmax(0,1fr);gap:1.25rem}
+/* Continuous horizontal topper-name/profile ticker */
+.topper-selector-col{display:flex!important;flex-direction:row!important;align-items:stretch;gap:.9rem;max-height:none!important;height:auto;overflow-x:auto!important;overflow-y:hidden!important;padding:8px 4px 14px;scrollbar-width:thin;scrollbar-color:var(--primary) transparent;white-space:normal;overscroll-behavior-x:contain;scroll-behavior:auto;}
+.topper-selector-col .cadre-card-item{flex:0 0 clamp(260px,29vw,340px)!important;min-width:260px;min-height:100px;scroll-snap-align:start;}
+.topper-selector-col .cadre-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;max-width:100%;}
+.topper-selector-col .cadre-name-row{min-width:0;}
+@media(max-width:700px){.topper-selector-col .cadre-card-item{flex-basis:82vw!important;min-width:82vw;}}
+@media(prefers-reduced-motion:reduce){.topper-selector-col{scroll-behavior:auto!important;}}
+.cadre-card-item{border-radius:18px;backdrop-filter:blur(8px);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.cadre-card-item.active{transform:translateX(5px);outline:1px solid rgba(255,106,0,.18)}
+.dossier-card{border-radius:24px!important;overflow:hidden;box-shadow:0 22px 70px rgba(15,23,42,.12)!important;transition:opacity .25s ease,transform .25s ease}
+.topper-origin-explorer{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(180px,.95fr);gap:1rem;margin:1.15rem 0 1.35rem;padding:1rem;border:1px solid rgba(255,106,0,.22);border-radius:22px;background:linear-gradient(135deg,rgba(255,106,0,.07),rgba(15,23,42,.025));overflow:hidden}
+.topper-origin-map{position:relative;min-height:265px;border-radius:17px;overflow:hidden;background:radial-gradient(ellipse at 48% 48%,rgba(255,106,0,.12),transparent 56%),linear-gradient(145deg,#111827,#1e293b);isolation:isolate}
+.topper-origin-map:before,.topper-origin-map:after{content:'';position:absolute;inset:-40%;border:1px solid rgba(255,255,255,.08);border-radius:50%;animation:originOrbit 22s linear infinite;pointer-events:none}
+.topper-origin-map:after{inset:-20%;animation-duration:15s;animation-direction:reverse}
+.topper-map-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:25px 25px;mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent)}
+.india-schematic{position:absolute;width:54%;height:84%;left:23%;top:7%;filter:drop-shadow(0 0 12px rgba(255,106,0,.15));opacity:.95}
+.india-schematic path{fill:rgba(255,255,255,.09);stroke:rgba(255,255,255,.62);stroke-width:1.5;stroke-linejoin:round}
+.origin-pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;display:grid;justify-items:center;gap:5px;transition:left .7s cubic-bezier(.2,.8,.2,1),top .7s cubic-bezier(.2,.8,.2,1)}
+.origin-pin-dot{width:15px;height:15px;border-radius:50%;background:#ff7a18;border:3px solid white;box-shadow:0 0 0 7px rgba(255,106,0,.18),0 0 24px rgba(255,106,0,.9);animation:pinPulse 1.8s ease-out infinite}
+.origin-pin-label{padding:5px 9px;border-radius:8px;background:#fff;color:#111827;font-size:.68rem;font-weight:800;white-space:nowrap;box-shadow:0 5px 18px rgba(0,0,0,.2)}
+.origin-map-tag{position:absolute;top:12px;left:12px;color:#cbd5e1;font-size:.64rem;letter-spacing:.14em;font-weight:800;z-index:2}
+.origin-map-live{position:absolute;right:12px;bottom:12px;color:#bbf7d0;font-size:.65rem;display:flex;align-items:center;gap:6px;z-index:2}
+.origin-map-live:before{content:'';width:6px;height:6px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px #4ade80}
+.origin-profile-side{display:flex;flex-direction:column;justify-content:center;gap:.75rem;padding:.4rem .55rem}
+.origin-eyebrow{font-size:.67rem;font-weight:800;letter-spacing:.12em;color:var(--primary);text-transform:uppercase}
+.origin-big-place{font-size:clamp(1.15rem,2vw,1.7rem);font-weight:850;line-height:1.12;color:var(--on-surface)}
+.origin-desc{font-size:.82rem;line-height:1.55;color:var(--on-surface-variant)}
+.origin-stat-row{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-top:.15rem}
+.origin-stat{padding:.7rem;border-radius:13px;background:var(--surface);border:1px solid var(--outline)}
+.origin-stat strong{display:block;font-size:1.02rem;color:var(--primary)}.origin-stat span{font-size:.66rem;color:var(--on-surface-variant)}
+.origin-action{border:0;border-radius:12px;padding:.7rem .85rem;background:var(--primary);color:white;font-weight:800;cursor:pointer;transition:transform .2s ease,filter .2s ease;text-align:left}
+.origin-action:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.topper-map-note{font-size:.68rem;color:var(--on-surface-variant);margin:.35rem 0 0}
+@keyframes pinPulse{0%{box-shadow:0 0 0 0 rgba(255,106,0,.5)}70%{box-shadow:0 0 0 12px rgba(255,106,0,0)}100%{box-shadow:0 0 0 0 rgba(255,106,0,0)}}
+@keyframes originOrbit{to{transform:rotate(360deg)}}
+@media(max-width:850px){.topper-cadre-layout{grid-template-columns:1fr}.topper-selector-col{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(245px,78%);grid-template-columns:none;max-height:none;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory}.cadre-card-item{scroll-snap-align:start}.topper-origin-explorer{grid-template-columns:1fr}.topper-origin-map{min-height:250px}.origin-profile-side{padding:.35rem}}
+@media(prefers-reduced-motion:reduce){.topper-origin-map:before,.topper-origin-map:after,.origin-pin-dot{animation:none!important}.cadre-card-item,.origin-pin{transition:none!important}}
+
+
+
+/* Area-wise profile count based on the topper profiles currently listed */
+.origin-stat-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+.origin-area-count{grid-column:1 / -1;display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(110deg,rgba(255,122,24,.12),var(--surface));border-color:rgba(255,122,24,.32)}
+.origin-area-count strong{font-size:1.3rem}
+.origin-area-count span{text-align:right}
+
+/* Enhanced first animation: animated India origin map */
+.topper-origin-map{background-size:200% 200%;animation:originMapGlow 9s ease-in-out infinite alternate}
+.topper-origin-map:before{border-color:rgba(255,122,24,.18);box-shadow:0 0 35px rgba(255,106,0,.08) inset}
+.topper-origin-map:after{border-color:rgba(255,255,255,.12)}
+.india-schematic{transform-origin:50% 50%;animation:indiaMapFloat 5s ease-in-out infinite;}
+.india-schematic path:first-child{stroke-dasharray:720;stroke-dashoffset:720;animation:indiaOutlineDraw 3s ease forwards,indiaOutlineGlow 4s ease-in-out 3s infinite alternate;}
+.origin-pin{animation:originPinFloat 2.8s ease-in-out infinite;}
+.origin-pin-dot:after{content:"";display:block;position:absolute;width:28px;height:28px;border:1px solid rgba(255,122,24,.75);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);animation:originRadar 2s ease-out infinite;pointer-events:none}
+.origin-pin-dot{position:relative;}
+.origin-map-live{animation:originLivePulse 2.2s ease-in-out infinite;}
+@keyframes originMapGlow{0%{background-position:0% 30%}100%{background-position:100% 70%}}
+@keyframes indiaMapFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.015)}}
+@keyframes indiaOutlineDraw{to{stroke-dashoffset:0}}
+@keyframes indiaOutlineGlow{from{filter:drop-shadow(0 0 4px rgba(255,122,24,.18))}to{filter:drop-shadow(0 0 13px rgba(255,122,24,.7))}}
+@keyframes originPinFloat{0%,100%{translate:0 0}50%{translate:0 -5px}}
+@keyframes originRadar{0%{width:16px;height:16px;opacity:.9}100%{width:54px;height:54px;opacity:0}}
+@keyframes originLivePulse{0%,100%{opacity:.72}50%{opacity:1;text-shadow:0 0 12px rgba(255,122,24,.7)}}
+@media(prefers-reduced-motion:reduce){.topper-origin-map,.india-schematic,.india-schematic path:first-child,.origin-pin,.origin-pin-dot:after,.origin-map-live{animation:none!important}}
+
+/* Three additional India-map animations */
+.topper-map-grid{animation:mapGridDrift 12s linear infinite;}
+.origin-map-tag{animation:mapTagShimmer 3.8s ease-in-out infinite;}
+.origin-map-live:before{animation:mapLiveBeacon 1.5s ease-in-out infinite;}
+@keyframes mapGridDrift{0%{background-position:0 0,0 0;opacity:.48}50%{opacity:.85}100%{background-position:0 50px,50px 0;opacity:.48}}
+@keyframes mapTagShimmer{0%,100%{text-shadow:0 0 0 rgba(255,122,24,0)}50%{text-shadow:0 0 12px rgba(255,122,24,.8);color:#fff}}
+@keyframes mapLiveBeacon{0%,100%{transform:scale(1);box-shadow:0 0 4px #4ade80}50%{transform:scale(1.65);box-shadow:0 0 13px #4ade80}}
+@media(prefers-reduced-motion:reduce){.topper-map-grid,.origin-map-tag,.origin-map-live:before{animation:none!important}}
+
+
+
+
+        /* UPSC-inspired scroll-reactive background: subtle saffron light + study-grid texture */
+        html { background: var(--surface); }
+        body {
+            position: relative;
+            isolation: isolate;
+            background: transparent;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: -7vh -2vw;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(ellipse at 12% 18%, rgba(255, 106, 0, 0.075) 0%, transparent 36%),
+                radial-gradient(ellipse at 88% 42%, rgba(245, 158, 11, 0.055) 0%, transparent 32%),
+                radial-gradient(ellipse at 48% 88%, rgba(255, 106, 0, 0.045) 0%, transparent 38%),
+                linear-gradient(rgba(120, 92, 70, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(120, 92, 70, 0.035) 1px, transparent 1px);
+            background-size: auto, auto, auto, 42px 42px, 42px 42px;
+            transform: translate3d(0, var(--upsc-scroll-shift, 0px), 0);
+            will-change: transform;
+            transition: opacity 0.25s ease;
+        }
+        /* Keep content panels readable while allowing the background to show softly around them. */
+        @media (max-width: 640px) {
+            body::before {
+                inset: -3vh -8vw;
+                background-size: auto, auto, auto, 34px 34px, 34px 34px;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            body::before { transform: none !important; transition: none !important; }
+        }
+
+    
+        /* Custom Study Materials section — aligned with ASPIRORA.AI saffron/white theme */
+        .study-materials-reference{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#fffaf5 0%,#fff 52%,#fff7ed 100%);}
+        .study-materials-reference:before{content:"";position:absolute;z-index:-1;width:420px;height:420px;right:-140px;top:-190px;border-radius:50%;background:radial-gradient(circle,rgba(255,106,0,.12),rgba(255,106,0,0) 68%);pointer-events:none;}
+        .study-materials-reference:after{content:"";position:absolute;z-index:-1;width:360px;height:360px;left:-160px;bottom:-190px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,77,.15),rgba(255,183,77,0) 70%);pointer-events:none;}
+        .study-materials-inner{max-width:1240px;margin:0 auto;padding:76px 24px 82px;}
+        .study-materials-kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid #fed7aa;border-radius:999px;background:#fff7ed;color:#c2410c;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;}
+        .study-materials-kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:#ff6a00;box-shadow:0 0 0 4px #ffedd5;}
+        .study-materials-heading{margin:18px 0 10px;color:#171717;font-size:clamp(2rem,4vw,3.35rem);font-weight:800;letter-spacing:-.055em;line-height:1.08;}
+        .study-materials-heading span{color:#ff6a00;}
+        .study-materials-lead{max-width:660px;color:#68615b;font-size:1rem;line-height:1.8;margin:0;}
+        .study-materials-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:38px;}
+        .study-resource-card{position:relative;display:flex;flex-direction:column;min-height:190px;padding:24px;border:1px solid #eee5dc;border-radius:20px;background:rgba(255,255,255,.88);box-shadow:0 8px 28px rgba(83,52,25,.045);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease;overflow:hidden;}
+        .study-resource-card:after{content:"";position:absolute;inset:auto -35px -70px auto;width:145px;height:145px;border-radius:50%;background:rgba(255,106,0,.055);transition:transform .3s ease;}
+        .study-resource-card:hover{transform:translateY(-5px);border-color:#fdba74;box-shadow:0 18px 38px rgba(194,65,12,.10);}
+        .study-resource-card:hover:after{transform:scale(1.3);}
+        .study-resource-top{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+        .study-resource-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:15px;background:#fff0e6;color:#ea580c;font-size:1.35rem;border:1px solid #ffdfc6;}
+        .study-resource-tag{padding:5px 8px;border-radius:7px;background:#f7f4ee;color:#817568;font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;}
+        .study-resource-card h3{margin:18px 0 7px;color:#211b17;font-size:1.15rem;font-weight:800;letter-spacing:-.025em;}
+        .study-resource-card p{margin:0;color:#746b63;font-size:.88rem;line-height:1.65;max-width:300px;}
+        .study-resource-link{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding-top:19px;color:#ea580c;font-size:.87rem;font-weight:800;text-decoration:none;}
+        .study-resource-link span{transition:transform .2s ease;}.study-resource-link:hover span{transform:translateX(4px);}
+        .study-prep-strip{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:28px;padding:24px 26px;border-radius:20px;background:linear-gradient(110deg,#fff0e6,#fff9f2 58%,#fff);border:1px solid #fed7aa;}
+        .study-prep-strip h3{margin:0 0 6px;font-size:1.18rem;font-weight:800;color:#29211c;}.study-prep-strip p{margin:0;color:#786b61;font-size:.88rem;line-height:1.6;}
+        .study-prep-actions{display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0;}
+        .study-prep-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 15px;border-radius:11px;background:#ff6a00;color:white;font-size:.83rem;font-weight:800;text-decoration:none;box-shadow:0 5px 14px rgba(255,106,0,.18);transition:background .2s,transform .2s;}
+        .study-prep-btn:hover{background:#ea580c;transform:translateY(-2px);}.study-prep-btn.secondary{background:white;color:#c2410c;border:1px solid #fdba74;box-shadow:none;}
+        @media(max-width:900px){.study-materials-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.study-prep-strip{align-items:flex-start;flex-direction:column}}
+        @media(max-width:560px){.study-materials-inner{padding:54px 17px 58px}.study-materials-grid{grid-template-columns:1fr;gap:13px;margin-top:27px}.study-resource-card{min-height:172px;padding:20px}.study-prep-strip{padding:20px}.study-prep-actions{width:100%}.study-prep-btn{flex:1}.study-materials-lead{font-size:.93rem}}
+        @media(prefers-reduced-motion:reduce){.study-resource-card,.study-resource-card:after,.study-prep-btn,.study-resource-link span{transition:none!important}}
+
+        /* Dark theme uses the same ASPIRORA.AI theme tokens as the rest of the site */
+        [data-theme="dark"] .study-materials-reference{background:linear-gradient(135deg,var(--surface) 0%,var(--surface-low) 58%,var(--surface-container) 100%);}
+        [data-theme="dark"] .study-materials-reference:before{background:radial-gradient(circle,rgba(255,106,0,.09),rgba(255,106,0,0) 68%);}
+        [data-theme="dark"] .study-materials-reference:after{background:radial-gradient(circle,rgba(255,106,0,.035),rgba(255,106,0,0) 70%);}
+        [data-theme="dark"] .study-materials-kicker{background:var(--surface-container);border-color:var(--outline);color:var(--primary);}
+        [data-theme="dark"] .study-materials-kicker:before{box-shadow:0 0 0 4px rgba(255,106,0,.12);}
+        [data-theme="dark"] .study-materials-heading{color:var(--on-surface);}
+        [data-theme="dark"] .study-materials-lead{color:var(--on-surface-variant);}
+        [data-theme="dark"] .study-resource-card{background:var(--surface-container);border-color:var(--outline);box-shadow:var(--shadow-md);}
+        [data-theme="dark"] .study-resource-card:hover{background:var(--surface-high);border-color:var(--primary);box-shadow:var(--shadow-xl);}
+        [data-theme="dark"] .study-resource-card:after{background:rgba(255,106,0,.045);}
+        [data-theme="dark"] .study-resource-icon{background:rgba(255,106,0,.10);color:var(--primary);border-color:rgba(255,106,0,.24);}
+        [data-theme="dark"] .study-resource-tag{background:var(--surface-high);color:var(--on-surface-variant);}
+        [data-theme="dark"] .study-resource-card h3{color:var(--on-surface);}
+        [data-theme="dark"] .study-resource-card p{color:var(--on-surface-variant);}
+        [data-theme="dark"] .study-resource-link{color:var(--primary);}
+        [data-theme="dark"] .study-prep-strip{background:linear-gradient(110deg,var(--surface-container),var(--surface-low) 62%,var(--surface));border-color:var(--outline);}
+        [data-theme="dark"] .study-prep-strip h3{color:var(--on-surface);}
+        [data-theme="dark"] .study-prep-strip p{color:var(--on-surface-variant);}
+        [data-theme="dark"] .study-prep-btn.secondary{background:var(--surface-high);color:var(--primary);border-color:var(--outline);}
+        .study-materials-reference,.study-resource-card,.study-prep-strip,.study-materials-kicker{transition:background .28s ease,color .28s ease,border-color .28s ease,box-shadow .28s ease;}
+
+
+
+        /* Continuous topper ticker + shared ASPIRORA saffron theme for topic cards */
+        .success-section .topper-cadre-layout { min-width: 0; }
+        .success-section .topper-selector-col {
+            min-width: 0;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            gap: .9rem;
+            padding: 8px 4px 14px;
+            animation: topperTickerScroll 20s linear infinite;
+            will-change: transform;
+        }
+        .success-section .topper-selector-col:hover,
+        .success-section .topper-selector-col:focus-within { animation-play-state: paused; }
+        .success-section .topper-selector-col .cadre-card-item {
+            flex: 0 0 clamp(260px, 29vw, 340px) !important;
+            min-width: 260px;
+            background: var(--surface);
+        }
+        .success-section .topper-selector-col .cadre-card-item.active {
+            background: linear-gradient(135deg, var(--surface) 0%, var(--primary-container) 100%);
+            border-color: var(--primary);
+        }
+        @keyframes topperTickerScroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-50% - .45rem)); }
+        }
+        /* Topic section follows the same primary palette as the rest of the page. */
+        #mindmap .topic-item { background: var(--surface); border-color: var(--outline); }
+        #mindmap .topic-item:hover,
+        #mindmap .topic-item.active {
+            background: var(--primary-container);
+            border-color: var(--primary);
+            box-shadow: 0 4px 16px rgba(255, 106, 0, .18);
+        }
+        #mindmap .topic-item.active strong,
+        #mindmap .branch-card h5 { color: var(--primary); }
+        [data-theme="dark"] #mindmap .topic-item:hover,
+        [data-theme="dark"] #mindmap .topic-item.active {
+            background: rgba(255, 106, 0, .14);
+        }
+        @media (max-width: 700px) {
+            .success-section .topper-selector-col .cadre-card-item { flex-basis: 82vw !important; min-width: 82vw; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .success-section .topper-selector-col { animation: none; overflow-x: auto !important; }
+        }
+
+
+
+        /* Final navbar override: keep the brand, links, and actions on one horizontal line. */
+        .navbar { width: 100%; }
+        .nav-container {
+            display: flex !important;
+            flex-flow: row nowrap !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: clamp(0.35rem, 1vw, 0.9rem) !important;
+            width: 100%;
+            max-width: 1440px;
+            min-width: 0;
+            padding: 0.65rem clamp(0.5rem, 1.5vw, 1.5rem) !important;
+            overflow: hidden;
+        }
+        .brand-logo {
+            flex: 0 0 auto !important;
+            white-space: nowrap !important;
+        }
+        .nav-menu {
+            position: static !important;
+            inset: auto !important;
+            display: flex !important;
+            flex: 1 1 auto !important;
+            flex-flow: row nowrap !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            gap: clamp(0.15rem, 0.55vw, 0.65rem) !important;
+            width: auto !important;
+            min-width: 0 !important;
+            max-width: 100%;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 0.2rem 0.15rem !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            background: transparent !important;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior-x: contain;
+        }
+        .nav-menu::-webkit-scrollbar { display: none; }
+        .nav-link {
+            display: inline-flex !important;
+            flex: 0 0 auto !important;
+            align-items: center !important;
+            white-space: nowrap !important;
+            font-size: clamp(0.64rem, 0.76vw, 0.81rem) !important;
+            line-height: 1.25 !important;
+            padding: 0.35rem clamp(0.18rem, 0.35vw, 0.4rem) !important;
+        }
+        .nav-actions {
+            display: flex !important;
+            flex: 0 0 auto !important;
+            flex-flow: row nowrap !important;
+            align-items: center !important;
+            margin-left: 0 !important;
+            gap: clamp(0.25rem, 0.5vw, 0.55rem) !important;
+        }
+        .nav-hamburger, .nav-mobile-backdrop, .nav-menu-mobile-cta { display: none !important; }
+        .nav-pay-btn { white-space: nowrap !important; flex: 0 0 auto !important; }
+        @media (max-width: 900px) {
+            .nav-container { gap: 0.35rem !important; padding-inline: 0.5rem !important; }
+            .brand-logo { gap: 0.3rem !important; font-size: 0.92rem !important; }
+            .brand-logo svg { width: 27px !important; height: 27px !important; }
+            .nav-menu { gap: 0.15rem !important; }
+            .nav-link { font-size: 0.68rem !important; padding-inline: 0.22rem !important; }
+            #navUnlockBtn { height: 32px !important; padding-inline: 0.5rem !important; font-size: 0.68rem !important; }
+            #navUnlockBtn .pay-btn-icon { display: none; }
+            .theme-toggle { width: 32px !important; height: 32px !important; }
+        }
+        @media (max-width: 560px) {
+            .nav-container { gap: 0.25rem !important; padding: 0.55rem 0.35rem !important; }
+            .brand-logo { font-size: 0.78rem !important; gap: 0.22rem !important; }
+            .brand-logo svg { width: 23px !important; height: 23px !important; }
+            .nav-menu { gap: 0.1rem !important; }
+            .nav-link { font-size: 0.64rem !important; padding: 0.3rem 0.18rem !important; }
+            #navUnlockBtn { max-width: 94px; overflow: hidden; }
+            #navUnlockBtn span:last-child { white-space: nowrap; }
+        }
+
+
+
+        /* Mobile navbar: keep only the dark-mode toggle on narrow screens. */
+        @media (max-width: 768px) {
+            .navbar .nav-container {
+                justify-content: flex-end !important;
+                min-height: 52px;
+                padding: 0.45rem 0.75rem !important;
+                overflow: visible !important;
+            }
+            .navbar .brand-logo,
+            .navbar .nav-menu,
+            .navbar #navUnlockBtn,
+            .navbar .nav-hamburger,
+            .navbar .nav-mobile-backdrop,
+            .navbar .nav-menu-mobile-cta {
+                display: none !important;
+            }
+            .navbar .nav-actions {
+                display: flex !important;
+                flex: 0 0 auto !important;
+                margin-left: auto !important;
+                gap: 0 !important;
+            }
+            .navbar .theme-toggle {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                width: 40px !important;
+                height: 40px !important;
+                min-width: 40px !important;
+                padding: 0 !important;
+                font-size: 1.1rem !important;
+                border-radius: 50% !important;
+            }
+        }
+        @media (min-width: 769px) {
+            .navbar .brand-logo,
+            .navbar .nav-menu,
+            .navbar #navUnlockBtn {
+                display: flex;
+            }
+        }
+
+
+
+        /* Final navbar action layout: Unlock Books first, dark mode last on every screen. */
+        .navbar .nav-container {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .nav-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 0.55rem;
+            margin-left: auto;
+            flex-shrink: 0;
+        }
+        .navbar #navUnlockBtn { order: 1; }
+        .navbar #themeBtn { order: 2; flex-shrink: 0; }
+
+        @media (max-width: 768px) {
+            .navbar .nav-container {
+                justify-content: flex-end !important;
+                gap: 0.5rem !important;
+                min-height: 56px;
+                padding: 0.45rem 0.65rem !important;
+            }
+            /* Keep the mobile navbar minimal, but retain both requested action buttons. */
+            .navbar .brand-logo,
+            .navbar .nav-menu,
+            .navbar .nav-hamburger,
+            .navbar .nav-mobile-backdrop,
+            .navbar .nav-menu-mobile-cta {
+                display: none !important;
+            }
+            .navbar .nav-actions {
+                display: flex !important;
+                flex: 0 1 auto !important;
+                width: auto !important;
+                margin-left: auto !important;
+                gap: 0.45rem !important;
+                align-items: center !important;
+                justify-content: flex-end !important;
+            }
+            .navbar #navUnlockBtn {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                order: 1 !important;
+                min-width: 0 !important;
+                width: auto !important;
+                max-width: none !important;
+                padding: 0.55rem 0.7rem !important;
+                margin: 0 !important;
+                font-size: 0.76rem !important;
+                line-height: 1.1 !important;
+                white-space: nowrap !important;
+                overflow: visible !important;
+            }
+            .navbar #navUnlockBtn .pay-btn-icon { display: none !important; }
+            .navbar #navUnlockBtn span:last-child { white-space: nowrap !important; }
+            .navbar #themeBtn {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                order: 2 !important;
+                width: 38px !important;
+                height: 38px !important;
+                min-width: 38px !important;
+                flex: 0 0 38px !important;
+                margin: 0 !important;
+            }
+        }
+        @media (max-width: 360px) {
+            .navbar .nav-container { padding-inline: 0.4rem !important; }
+            .navbar .nav-actions { gap: 0.3rem !important; }
+            .navbar #navUnlockBtn { padding: 0.48rem 0.52rem !important; font-size: 0.7rem !important; }
+            .navbar #themeBtn { width: 35px !important; height: 35px !important; min-width: 35px !important; flex-basis: 35px !important; }
+        }
+
+
+        /* Refined topper ticker: stable viewport, seamless loop, touch-friendly cards. */
+        .success-section .topper-ticker-viewport {
+            width: 100%;
+            min-width: 0;
+            overflow: hidden;
+            position: relative;
+            padding: 3px 0 12px;
+            -webkit-mask-image: linear-gradient(90deg, transparent, #000 2.5%, #000 97.5%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 2.5%, #000 97.5%, transparent);
+        }
+        .success-section .topper-selector-col {
+            display: flex !important;
+            flex-flow: row nowrap !important;
+            align-items: stretch;
+            width: max-content !important;
+            max-width: none !important;
+            min-width: max-content;
+            overflow: visible !important;
+            gap: 14px;
+            padding: 6px 8px 10px;
+            border: 0;
+            animation: aspiroraTopperLoop 32s linear infinite;
+            transform: translate3d(0,0,0);
+            will-change: transform;
+        }
+        .success-section .topper-selector-col .cadre-card-item {
+            flex: 0 0 clamp(255px, 27vw, 325px) !important;
+            width: clamp(255px, 27vw, 325px);
+            min-width: 0;
+            box-sizing: border-box;
+        }
+        .success-section .topper-ticker-viewport:hover .topper-selector-col,
+        .success-section .topper-ticker-viewport:focus-within .topper-selector-col {
+            animation-play-state: paused;
+        }
+        .success-section .topper-selector-col .cadre-card-item:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 3px;
+        }
+        @keyframes aspiroraTopperLoop {
+            from { transform: translate3d(0,0,0); }
+            to { transform: translate3d(-50%,0,0); }
+        }
+        @media (max-width: 700px) {
+            .success-section .topper-selector-col .cadre-card-item {
+                flex-basis: min(82vw, 320px) !important;
+                width: min(82vw, 320px);
+            }
+            .success-section .topper-selector-col { animation-duration: 38s; }
+            .success-section .topper-ticker-hint { font-size: .72rem; text-align: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .success-section .topper-selector-col { animation: none !important; transform: none !important; }
+            .success-section .topper-ticker-viewport { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+        }
+
+
+        /* Screenshot-matched responsive navigation: clean white surface, orange star brand and CTA. */
+        .navbar {
+            background: var(--surface, #fff) !important;
+            border-bottom: 1px solid var(--outline, #e2dfd8) !important;
+            box-shadow: 0 1px 0 rgba(30, 20, 10, .025) !important;
+            transition: background .25s ease, box-shadow .25s ease, border-color .25s ease !important;
+        }
+        .navbar.is-scrolled {
+            box-shadow: 0 8px 24px rgba(41, 26, 10, .09) !important;
+            border-bottom-color: rgba(255, 106, 0, .13) !important;
+        }
+        .navbar .nav-container {
+            display: flex !important;
+            flex-flow: row nowrap !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: clamp(.55rem, 1.1vw, 1.2rem) !important;
+            width: 100% !important;
+            max-width: 1720px !important;
+            min-height: 78px !important;
+            margin-inline: auto !important;
+            padding: .45rem clamp(1rem, 2.3vw, 2.2rem) !important;
+            overflow: visible !important;
+            position: relative !important;
+        }
+        .navbar .brand-logo {
+            display: inline-flex !important;
+            flex: 0 0 auto !important;
+            align-items: center !important;
+            gap: .7rem !important;
+            white-space: nowrap !important;
+            text-decoration: none !important;
+            font-size: clamp(1.15rem, 1.55vw, 1.72rem) !important;
+            font-weight: 800 !important;
+            letter-spacing: -.045em !important;
+            color: #ff6900 !important;
+        }
+        .navbar .brand-logo svg {
+            width: 46px !important;
+            height: 46px !important;
+            flex: 0 0 46px !important;
+            border-radius: 12px !important;
+            filter: drop-shadow(0 2px 3px rgba(255, 106, 0, .10));
+        }
+        .navbar .brand-text {
+            color: #ff6900 !important;
+            line-height: 1 !important;
+            letter-spacing: -.045em !important;
+        }
+        .navbar .nav-menu {
+            position: static !important;
+            inset: auto !important;
+            display: flex !important;
+            flex: 1 1 auto !important;
+            flex-flow: row nowrap !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: clamp(.25rem, .65vw, .8rem) !important;
+            width: auto !important;
+            min-width: 0 !important;
+            max-width: none !important;
+            max-height: none !important;
+            height: auto !important;
+            margin: 0 !important;
+            padding: .15rem 0 !important;
+            overflow: visible !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            background: transparent !important;
+            scrollbar-width: none;
+        }
+        .navbar .nav-menu::-webkit-scrollbar { display: none !important; }
+        .navbar .nav-link {
+            position: relative !important;
+            display: inline-flex !important;
+            flex: 0 0 auto !important;
+            align-items: center !important;
+            width: auto !important;
+            padding: .48rem .12rem !important;
+            border-radius: 0 !important;
+            color: #626777 !important;
+            font-size: clamp(.78rem, .87vw, .96rem) !important;
+            font-weight: 500 !important;
+            line-height: 1.25 !important;
+            text-decoration: none !important;
+            white-space: nowrap !important;
+            transition: color .2s ease !important;
+        }
+        .navbar .nav-link::after {
+            position: absolute;
+            right: 0;
+            bottom: .12rem;
+            left: 0;
+            height: 2px;
+            content: "";
+            background: #ff6900;
+            border-radius: 3px;
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform .2s ease;
+        }
+        .navbar .nav-link:hover,
+        .navbar .nav-link[aria-current="location"] { color: #ff6900 !important; }
+        .navbar .nav-link:hover::after,
+        .navbar .nav-link[aria-current="location"]::after { transform: scaleX(1); }
+        .navbar .nav-actions {
+            display: flex !important;
+            flex: 0 0 auto !important;
+            flex-flow: row nowrap !important;
+            align-items: center !important;
+            justify-content: flex-end !important;
+            gap: clamp(.5rem, .8vw, .9rem) !important;
+            width: auto !important;
+            margin: 0 0 0 .15rem !important;
+        }
+        .navbar #themeBtn {
+            order: 1 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex: 0 0 49px !important;
+            width: 49px !important;
+            min-width: 49px !important;
+            height: 49px !important;
+            padding: 0 !important;
+            border: 1px solid #e3ded5 !important;
+            border-radius: 13px !important;
+            background: #f8f5ef !important;
+            font-size: 1.15rem !important;
+            cursor: pointer;
+            transition: transform .2s ease, background .2s ease, border-color .2s ease !important;
+        }
+        .navbar #themeBtn:hover { transform: translateY(-1px); border-color: #ffc18f !important; }
+        .navbar #navUnlockBtn {
+            order: 2 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex: 0 0 auto !important;
+            min-width: max-content !important;
+            min-height: 49px !important;
+            height: 49px !important;
+            padding: 0 1.35rem !important;
+            border: 0 !important;
+            border-radius: 13px !important;
+            background: linear-gradient(105deg, #ff6900, #ff812b) !important;
+            box-shadow: 0 5px 14px rgba(255, 106, 0, .2) !important;
+            color: #fff !important;
+            font-size: .94rem !important;
+            font-weight: 750 !important;
+            white-space: nowrap !important;
+            gap: .55rem !important;
+            transition: transform .2s ease, box-shadow .2s ease, filter .2s ease !important;
+        }
+        .navbar #navUnlockBtn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(255, 106, 0, .27) !important;
+            filter: saturate(1.05);
+        }
+        .navbar #navUnlockBtn .pay-btn-icon { display: inline !important; }
+        .navbar .nav-hamburger { display: none !important; }
+        .navbar .nav-mobile-backdrop { display: none !important; }
+
+        /* Scroll reveal: applies only to selected content blocks, not the whole page. */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translate3d(0, 22px, 0);
+            transition: opacity .65s cubic-bezier(.2,.7,.2,1), transform .65s cubic-bezier(.2,.7,.2,1);
+            transition-delay: var(--reveal-delay, 0ms);
+            will-change: opacity, transform;
+        }
+        .scroll-reveal.is-visible { opacity: 1; transform: translate3d(0, 0, 0); }
+        @media (prefers-reduced-motion: reduce) {
+            .scroll-reveal, .scroll-reveal.is-visible {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+                will-change: auto !important;
+            }
+            .navbar, .navbar #themeBtn, .navbar #navUnlockBtn, .navbar .nav-link::after { transition: none !important; }
+        }
+
+        /* Collapse to a dropdown before the desktop links become cramped. */
+        @media (max-width: 1460px) {
+            .navbar .nav-container { min-height: 70px !important; padding-inline: 1.2rem !important; gap: .7rem !important; }
+            .navbar .brand-logo { font-size: clamp(1.05rem, 1.8vw, 1.45rem) !important; gap: .55rem !important; }
+            .navbar .brand-logo svg { width: 40px !important; height: 40px !important; flex-basis: 40px !important; }
+            .navbar .nav-menu {
+                display: none !important;
+                position: absolute !important;
+                top: calc(100% + 1px) !important;
+                left: .8rem !important;
+                right: .8rem !important;
+                z-index: 1005 !important;
+                flex-direction: column !important;
+                align-items: stretch !important;
+                justify-content: flex-start !important;
+                gap: .12rem !important;
+                width: auto !important;
+                max-width: none !important;
+                max-height: min(72vh, 620px) !important;
+                overflow: auto !important;
+                padding: .7rem !important;
+                border: 1px solid var(--outline, #e2dfd8) !important;
+                border-radius: 15px !important;
+                background: var(--surface, #fff) !important;
+                box-shadow: 0 18px 44px rgba(25, 20, 15, .16) !important;
+            }
+            .navbar .nav-menu.active { display: flex !important; }
+            .navbar .nav-link { width: 100% !important; padding: .76rem .85rem !important; border-radius: 9px !important; font-size: .94rem !important; }
+            .navbar .nav-link::after { display: none !important; }
+            .navbar .nav-link:hover, .navbar .nav-link[aria-current="location"] { background: var(--primary-container, #fff0e6) !important; }
+            .navbar .nav-hamburger {
+                order: 0 !important;
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                flex: 0 0 42px !important;
+                flex-direction: column !important;
+                gap: 5px !important;
+                width: 42px !important;
+                height: 42px !important;
+                padding: 0 !important;
+                border: 1px solid #e3ded5 !important;
+                border-radius: 12px !important;
+                background: #f8f5ef !important;
+                color: #413a34 !important;
+                cursor: pointer;
+            }
+            .navbar .nav-hamburger span { display: block !important; width: 17px !important; height: 2px !important; background: currentColor !important; border-radius: 3px !important; transition: transform .2s ease, opacity .2s ease !important; }
+            .navbar .nav-hamburger.active span:first-child { transform: translateY(7px) rotate(45deg); }
+            .navbar .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+            .navbar .nav-hamburger.active span:last-child { transform: translateY(-7px) rotate(-45deg); }
+            .navbar .nav-mobile-backdrop.active {
+                display: block !important;
+                position: fixed !important;
+                inset: 70px 0 0 !important;
+                z-index: 1001 !important;
+                background: rgba(20, 16, 12, .12) !important;
+            }
+            .navbar .nav-container { z-index: 1002 !important; }
+        }
+        @media (max-width: 600px) {
+            .navbar .nav-container { min-height: 64px !important; padding: .5rem .7rem !important; gap: .35rem !important; }
+            .navbar .brand-logo { font-size: clamp(.95rem, 4.1vw, 1.2rem) !important; gap: .4rem !important; }
+            .navbar .brand-logo svg { width: 36px !important; height: 36px !important; flex-basis: 36px !important; border-radius: 10px !important; }
+            .navbar .nav-actions { gap: .35rem !important; margin-left: auto !important; }
+            .navbar .nav-hamburger, .navbar #themeBtn { width: 37px !important; height: 37px !important; flex-basis: 37px !important; min-width: 37px !important; border-radius: 10px !important; }
+            .navbar #navUnlockBtn { min-height: 37px !important; height: 37px !important; padding: 0 .7rem !important; border-radius: 10px !important; font-size: .76rem !important; gap: .3rem !important; }
+            .navbar #navUnlockBtn .pay-btn-icon { display: none !important; }
+        }
+        @media (max-width: 380px) {
+            .navbar .nav-container { padding-inline: .45rem !important; gap: .25rem !important; }
+            .navbar .brand-logo { font-size: .83rem !important; gap: .3rem !important; letter-spacing: -.04em !important; }
+            .navbar .brand-logo svg { width: 32px !important; height: 32px !important; flex-basis: 32px !important; }
+            .navbar .nav-actions { gap: .25rem !important; }
+            .navbar .nav-hamburger, .navbar #themeBtn { width: 33px !important; height: 33px !important; flex-basis: 33px !important; min-width: 33px !important; }
+            .navbar #navUnlockBtn { padding-inline: .48rem !important; font-size: .68rem !important; }
+            .navbar #navUnlockBtn span:last-child { font-size: 0 !important; }
+            .navbar #navUnlockBtn span:last-child::after { content: "Unlock ₹99"; font-size: .68rem !important; }
+        }
+
+
+
+        /* Final responsive navbar pass: keep the screenshot layout on desktop and a real menu on smaller screens. */
+        .navbar { isolation: isolate; }
+        .navbar .nav-container {
+            overflow: visible !important;
+            max-width: 1720px !important;
+            min-height: 70px !important;
+            padding-inline: .75rem !important;
+        }
+        .navbar .brand-logo { display: inline-flex !important; flex-shrink: 0 !important; }
+        .navbar .nav-menu { min-width: 0 !important; }
+        .navbar .nav-actions { flex-shrink: 0 !important; }
+        .navbar #themeBtn { order: 1 !important; }
+        .navbar #navUnlockBtn { order: 2 !important; }
+
+        @media (min-width: 1461px) {
+            .navbar .nav-container { justify-content: space-between !important; }
+            .navbar .nav-menu {
+                display: flex !important; position: static !important; inset: auto !important;
+                flex: 1 1 auto !important; flex-direction: row !important; justify-content: space-between !important;
+                align-items: center !important; gap: clamp(.35rem, .8vw, 1rem) !important;
+                width: auto !important; max-height: none !important; overflow: visible !important;
+                margin-inline: clamp(.3rem, 1vw, 1.25rem) !important; padding: 0 !important;
+                border: 0 !important; border-radius: 0 !important; box-shadow: none !important;
+                background: transparent !important;
+            }
+            .navbar .nav-link { font-size: clamp(.78rem, .86vw, .98rem) !important; }
+            .navbar .nav-hamburger, .navbar .nav-mobile-backdrop { display: none !important; }
+        }
+        @media (max-width: 1460px) {
+            .navbar .nav-container { min-height: 70px !important; padding-inline: clamp(.75rem, 2vw, 1.4rem) !important; gap: .65rem !important; }
+            .navbar .brand-logo { font-size: clamp(1rem, 1.8vw, 1.35rem) !important; gap: .5rem !important; }
+            .navbar .brand-logo svg { width: 40px !important; height: 40px !important; flex-basis: 40px !important; }
+            .navbar .nav-menu {
+                display: none !important; position: absolute !important; top: calc(100% + 1px) !important;
+                left: .75rem !important; right: .75rem !important; z-index: 1005 !important;
+                flex-direction: column !important; align-items: stretch !important; justify-content: flex-start !important;
+                gap: .12rem !important; width: auto !important; max-width: none !important;
+                max-height: min(72vh, 620px) !important; overflow: auto !important; margin: 0 !important;
+                padding: .7rem !important; border: 1px solid var(--outline, #e2dfd8) !important;
+                border-radius: 15px !important; background: var(--surface, #fff) !important;
+                box-shadow: 0 18px 44px rgba(25, 20, 15, .16) !important;
+            }
+            .navbar .nav-menu.active { display: flex !important; }
+            .navbar .nav-link { display: flex !important; width: 100% !important; padding: .75rem .85rem !important; font-size: .94rem !important; border-radius: 9px !important; }
+            .navbar .nav-link::after { display: none !important; }
+            .navbar .nav-link:hover, .navbar .nav-link[aria-current="location"] { background: var(--primary-container, #fff0e6) !important; }
+            .navbar .nav-actions { margin-left: auto !important; gap: .5rem !important; }
+            .navbar .nav-hamburger {
+                order: 0 !important; display: inline-flex !important; flex: 0 0 42px !important;
+                align-items: center !important; justify-content: center !important; flex-direction: column !important;
+                gap: 5px !important; width: 42px !important; height: 42px !important; padding: 0 !important;
+                border: 1px solid #e3ded5 !important; border-radius: 12px !important;
+                background: #f8f5ef !important; color: #413a34 !important; cursor: pointer !important;
+            }
+            .navbar .nav-hamburger span { display: block !important; width: 17px !important; height: 2px !important; background: currentColor !important; border-radius: 3px !important; transition: transform .2s ease, opacity .2s ease !important; }
+            .navbar .nav-hamburger.active span:first-child { transform: translateY(7px) rotate(45deg); }
+            .navbar .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+            .navbar .nav-hamburger.active span:last-child { transform: translateY(-7px) rotate(-45deg); }
+            .navbar .nav-mobile-backdrop.active { display: block !important; position: fixed !important; inset: 70px 0 0 !important; z-index: 1001 !important; background: rgba(20,16,12,.12) !important; }
+            .navbar .nav-container { z-index: 1002 !important; }
+        }
+        @media (max-width: 600px) {
+            .navbar .nav-container { min-height: 64px !important; padding: .5rem .7rem !important; gap: .35rem !important; }
+            .navbar .brand-logo { font-size: clamp(.92rem, 4vw, 1.15rem) !important; gap: .38rem !important; }
+            .navbar .brand-logo svg { width: 36px !important; height: 36px !important; flex-basis: 36px !important; border-radius: 10px !important; }
+            .navbar .nav-actions { gap: .35rem !important; }
+            .navbar .nav-hamburger, .navbar #themeBtn { width: 38px !important; height: 38px !important; flex-basis: 38px !important; min-width: 38px !important; border-radius: 10px !important; }
+            .navbar #navUnlockBtn { min-height: 38px !important; height: 38px !important; padding-inline: .72rem !important; border-radius: 10px !important; font-size: .76rem !important; gap: .3rem !important; }
+            .navbar #navUnlockBtn .pay-btn-icon { display: none !important; }
+        }
+        @media (max-width: 380px) {
+            .navbar .nav-container { padding-inline: .4rem !important; gap: .25rem !important; }
+            .navbar .brand-logo { font-size: .75rem !important; gap: .25rem !important; }
+            .navbar .brand-logo svg { width: 31px !important; height: 31px !important; flex-basis: 31px !important; }
+            .navbar .nav-actions { gap: .22rem !important; }
+            .navbar .nav-hamburger, .navbar #themeBtn { width: 33px !important; height: 33px !important; flex-basis: 33px !important; min-width: 33px !important; }
+            .navbar #navUnlockBtn { padding-inline: .48rem !important; font-size: .68rem !important; }
+            .navbar #navUnlockBtn span:last-child { font-size: 0 !important; }
+            .navbar #navUnlockBtn span:last-child::after { content: "Unlock ₹99"; font-size: .68rem !important; }
+        }
+        [data-theme="dark"] .navbar .nav-link { color: var(--on-surface, #e5e7eb) !important; }
+        [data-theme="dark"] .navbar .nav-menu { color: var(--on-surface, #e5e7eb); }
+        [data-theme="dark"] .navbar #themeBtn,
+        [data-theme="dark"] .navbar .nav-hamburger { background: var(--surface-low, #222) !important; color: var(--on-surface, #fff) !important; border-color: var(--outline, #444) !important; }
+
+
+
+        /* 393px phone layout: compact brand + menu/theme/unlock controls with no horizontal overflow. */
+        @media (min-width: 381px) and (max-width: 430px) {
+            .navbar,
+            .navbar * { box-sizing: border-box; }
+            .navbar .nav-container {
+                width: 100% !important;
+                min-width: 0 !important;
+                min-height: 62px !important;
+                padding: .45rem .55rem !important;
+                gap: .3rem !important;
+                overflow: visible !important;
+                justify-content: space-between !important;
+            }
+            .navbar .brand-logo {
+                display: inline-flex !important;
+                flex: 0 0 auto !important;
+                min-width: 0 !important;
+                gap: .34rem !important;
+                font-size: .91rem !important;
+                letter-spacing: -.025em !important;
+                line-height: 1 !important;
+            }
+            .navbar .brand-logo svg {
+                display: block !important;
+                width: 34px !important;
+                height: 34px !important;
+                flex: 0 0 34px !important;
+            }
+            .navbar .brand-text { white-space: nowrap !important; }
+            .navbar .nav-menu {
+                display: none !important;
+                position: absolute !important;
+                top: calc(100% + 4px) !important;
+                left: .55rem !important;
+                right: .55rem !important;
+                width: auto !important;
+                max-width: none !important;
+                max-height: min(72vh, 560px) !important;
+                overflow-y: auto !important;
+                padding: .55rem !important;
+                z-index: 1005 !important;
+                background: var(--surface, #fff) !important;
+                border: 1px solid var(--outline, #e3ded5) !important;
+                border-radius: 14px !important;
+                box-shadow: 0 16px 38px rgba(25, 20, 15, .17) !important;
+            }
+            .navbar .nav-menu.active { display: flex !important; }
+            .navbar .nav-link {
+                display: flex !important;
+                width: 100% !important;
+                min-height: 42px !important;
+                padding: .65rem .75rem !important;
+                font-size: .9rem !important;
+                white-space: normal !important;
+            }
+            .navbar .nav-actions {
+                display: flex !important;
+                flex: 0 0 auto !important;
+                width: auto !important;
+                min-width: 0 !important;
+                margin: 0 0 0 auto !important;
+                gap: .28rem !important;
+                align-items: center !important;
+            }
+            .navbar .nav-hamburger,
+            .navbar #themeBtn {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                flex: 0 0 35px !important;
+                width: 35px !important;
+                min-width: 35px !important;
+                height: 35px !important;
+                padding: 0 !important;
+                border-radius: 10px !important;
+            }
+            .navbar .nav-hamburger { order: 0 !important; gap: 4px !important; }
+            .navbar #themeBtn { order: 1 !important; font-size: 1rem !important; }
+            .navbar #navUnlockBtn {
+                order: 2 !important;
+                display: inline-flex !important;
+                flex: 0 0 auto !important;
+                min-width: 0 !important;
+                max-width: none !important;
+                width: auto !important;
+                height: 35px !important;
+                min-height: 35px !important;
+                padding: 0 .55rem !important;
+                gap: 0 !important;
+                font-size: .71rem !important;
+                line-height: 1 !important;
+                border-radius: 10px !important;
+                overflow: visible !important;
+            }
+            .navbar #navUnlockBtn .pay-btn-icon { display: none !important; }
+            .navbar #navUnlockBtn span:last-child {
+                display: inline-block !important;
+                font-size: 0 !important;
+                white-space: nowrap !important;
+            }
+            .navbar #navUnlockBtn span:last-child::after {
+                content: "Unlock ₹99";
+                font-size: .71rem !important;
+                font-weight: 750 !important;
+            }
+            .navbar .nav-mobile-backdrop.active {
+                display: block !important;
+                position: fixed !important;
+                inset: 62px 0 0 !important;
+                z-index: 1001 !important;
+                background: rgba(20, 16, 12, .12) !important;
+            }
+            .navbar .nav-container { z-index: 1002 !important; }
+        }
+</style>
+
+
 </head>
 
 <body>
@@ -4842,14 +6051,13 @@
     <header class="navbar">
         <div class="nav-container">
             <a class="brand-logo" href="#">
-                <svg height="34" viewbox="0 0 40 40" width="34">
-                    <rect fill="#ff6a00" height="40" rx="10" width="40"></rect>
-                    <path d="M20 8L23.5 15L31 16L25.5 21.5L27 29L20 24.5L13 29L14.5 21.5L9 16L16.5 15L20 8Z"
-                        fill="#fff"></path>
+                <svg height="46" viewBox="0 0 40 40" width="46" role="img" aria-label="Samiksha AI logo">
+                    <rect x="1" y="1" width="38" height="38" rx="10" fill="#ff6900"/>
+                    <path d="M20 6.4 23.55 14.05 31.9 14.95 25.7 20.6 27.45 28.8 20 24.45 12.55 28.8 14.3 20.6 8.1 14.95 16.45 14.05Z" fill="#ffffff"/>
                 </svg>
-                <span class="brand-text">SAMIKSHA<span class="brand-highlight">.AI</span></span>
+                <span class="brand-text">SAMIKSHA.AI</span>
             </a>
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="primaryNav" aria-label="Main navigation">
                 <a class="nav-link" href="#books">Books (₹99)</a>
                 <a class="nav-link" href="#battle">1v1 Battle</a>
                 <a class="nav-link" href="#mindmap">Hover Mind Maps</a>
@@ -4859,22 +6067,17 @@
                 <a class="nav-link" href="#videos">30 Videos</a>
                 <a class="nav-link" href="#success">Topper Cadre</a>
                 <a class="nav-link" href="#selections">Why Aspirants Prefer Us</a>
-                        <div class="nav-menu-mobile-cta">
-                
-                </button>
-               
-            </div>
-        </nav>
+            </nav>
             <div class="nav-actions">
-                <button aria-label="Toggle theme" class="theme-toggle" id="themeBtn">🌙</button>
-                <button class="btn btn-primary btn-sm nav-pay-btn" id="navUnlockBtn" onclick="triggerUnlockAll()">
+                <button aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav" class="nav-hamburger" id="navHamburger" onclick="toggleMobileNav()" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button aria-label="Toggle theme" class="theme-toggle" id="themeBtn" type="button">🌙</button>
+                <button class="btn btn-primary btn-sm nav-pay-btn" id="navUnlockBtn" onclick="triggerUnlockAll()" type="button">
                     <span class="pay-btn-icon">⚡</span>
                     <span>Unlock Books ₹99</span>
-                </button>
-                            <button aria-label="Toggle navigation menu" aria-expanded="false" class="nav-hamburger" id="navHamburger" onclick="toggleMobileNav()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
                 </button>
             </div>
         <div class="nav-mobile-backdrop" id="navBackdrop" onclick="closeMobileNav()"></div>
@@ -5226,6 +6429,58 @@
                     </div>
                 </div>
             </div>
+
+            <!-- SCROLLING LIVE BATTLES: other aspirants' duels visible while you play -->
+            <div class="other-battles-panel" id="otherBattlesPanel">
+                <div class="other-battles-heading">
+                    <div>
+                        <span class="other-battles-eyebrow"><span class="live-dot pulse"></span> ARENA LIVE FEED</span>
+                        <h3>Other Aspirant Battles</h3>
+                        <p>Keep an eye on multiple duels happening across India while you play.</p>
+                    </div>
+                    <span class="other-battles-count">●  LIVE MATCHES</span>
+                </div>
+                <div class="other-battles-viewport" aria-label="Scrolling list of other aspirant battles">
+                    <div class="other-battles-track" id="otherBattlesTrack">
+                        <article class="other-battle-card">
+                            <div class="other-battle-card-top"><span class="other-battle-subject">GS-I · HISTORY</span><span class="other-battle-live">LIVE</span></div>
+                            <div class="other-battle-players"><span>👨‍🎓 Rohan</span><b>VS</b><span>👩‍🎓 Meera</span></div>
+                            <div class="other-battle-score"><strong data-score="4">4</strong><span>—</span><strong data-score="3">3</strong></div>
+                            <div class="other-battle-progress"><span style="width:72%"></span></div>
+                            <div class="other-battle-foot"><span>Round 4 of 5</span><span>North Zone</span></div>
+                        </article>
+                        <article class="other-battle-card">
+                            <div class="other-battle-card-top"><span class="other-battle-subject">GS-II · POLITY</span><span class="other-battle-live">LIVE</span></div>
+                            <div class="other-battle-players"><span>👨‍💼 Arjun</span><b>VS</b><span>👨‍🎓 Kabir</span></div>
+                            <div class="other-battle-score"><strong data-score="2">2</strong><span>—</span><strong data-score="2">2</strong></div>
+                            <div class="other-battle-progress"><span style="width:48%"></span></div>
+                            <div class="other-battle-foot"><span>Round 3 of 5</span><span>West Zone</span></div>
+                        </article>
+                        <article class="other-battle-card">
+                            <div class="other-battle-card-top"><span class="other-battle-subject">GS-III · ECONOMY</span><span class="other-battle-live">LIVE</span></div>
+                            <div class="other-battle-players"><span>👩‍🎓 Isha</span><b>VS</b><span>👨‍💻 Dev</span></div>
+                            <div class="other-battle-score"><strong data-score="3">3</strong><span>—</span><strong data-score="1">1</strong></div>
+                            <div class="other-battle-progress"><span style="width:64%"></span></div>
+                            <div class="other-battle-foot"><span>Round 4 of 5</span><span>South Zone</span></div>
+                        </article>
+                        <article class="other-battle-card">
+                            <div class="other-battle-card-top"><span class="other-battle-subject">CSAT · REASONING</span><span class="other-battle-live">LIVE</span></div>
+                            <div class="other-battle-players"><span>👨‍🎓 Nikhil</span><b>VS</b><span>👩‍💼 Sana</span></div>
+                            <div class="other-battle-score"><strong data-score="1">1</strong><span>—</span><strong data-score="2">2</strong></div>
+                            <div class="other-battle-progress"><span style="width:38%"></span></div>
+                            <div class="other-battle-foot"><span>Round 2 of 5</span><span>East Zone</span></div>
+                        </article>
+                        <article class="other-battle-card">
+                            <div class="other-battle-card-top"><span class="other-battle-subject">GS-IV · ETHICS</span><span class="other-battle-live">LIVE</span></div>
+                            <div class="other-battle-players"><span>👨‍💼 Aditya</span><b>VS</b><span>👩‍🎓 Tara</span></div>
+                            <div class="other-battle-score"><strong data-score="4">4</strong><span>—</span><strong data-score="4">4</strong></div>
+                            <div class="other-battle-progress"><span style="width:86%"></span></div>
+                            <div class="other-battle-foot"><span>Round 5 of 5</span><span>Central Zone</span></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="other-battles-bottom"><span>Scores shown reflect activity in this preview.</span><span>← Scroll to explore more duels →</span></div>
+            </div>
         </div>
     </section>
     <!-- SECTION 2: HOVER MIND MAP ENGINE WITH SYNAPSE ANIMATIONS -->
@@ -5353,95 +6608,47 @@
             </div>
         </div>
     </section>
-    <!-- SECTION 4: ALL-INDIA LEADERBOARD -->
-    <section class="section leaderboard-section" id="leaderboard">
-        <div class="container">
-            <div class="section-header">
-                <div class="sub-badge">NATIONAL BENCHMARKING</div>
-                <h2 class="section-title">All-India Aspirant Leaderboard</h2>
-                <p class="section-subtitle">Real-time ranking of candidates across weekly mocks and daily crucible
-                    answer evaluations.</p>
+    <!-- SECTION 4: STUDY MATERIALS -->
+    <section class="section study-materials-reference" id="leaderboard" aria-label="Study Materials">
+        <div class="study-materials-inner">
+            <div class="study-materials-kicker">Learn · Practice · Excel</div>
+            <h2 class="study-materials-heading">Study smarter.<br><span>Prepare with purpose.</span></h2>
+            <p class="study-materials-lead">Focused UPSC resources to help you build strong concepts, revise faster, and practise with a clear daily plan — all in the ASPIRORA.AI style.</p>
+            <div class="study-materials-grid">
+                <article class="study-resource-card">
+                    <div class="study-resource-top"><div class="study-resource-icon" aria-hidden="true">▤</div><span class="study-resource-tag">GS Foundation</span></div>
+                    <h3>Polity Notes</h3><p>Understand the Constitution, governance, and core concepts with structured revision notes.</p>
+                    <a class="study-resource-link" href="#mind-maps">Explore Polity <span>→</span></a>
+                </article>
+                <article class="study-resource-card">
+                    <div class="study-resource-top"><div class="study-resource-icon" aria-hidden="true">◎</div><span class="study-resource-tag">Visual Revision</span></div>
+                    <h3>Geography &amp; Maps</h3><p>Connect places, physical features, and important concepts through visual learning.</p>
+                    <a class="study-resource-link" href="#mind-maps">Explore maps <span>→</span></a>
+                </article>
+                <article class="study-resource-card">
+                    <div class="study-resource-top"><div class="study-resource-icon" aria-hidden="true">▥</div><span class="study-resource-tag">Exam Practice</span></div>
+                    <h3>Previous Year Questions</h3><p>Practise UPSC-style questions and recognise recurring themes across the syllabus.</p>
+                    <a class="study-resource-link" href="#mock-tests">Practise questions <span>→</span></a>
+                </article>
+                <article class="study-resource-card">
+                    <div class="study-resource-top"><div class="study-resource-icon" aria-hidden="true">◷</div><span class="study-resource-tag">Build Consistency</span></div>
+                    <h3>Daily Study Goals</h3><p>Break preparation into manageable tasks and keep your revision routine consistent.</p>
+                    <a class="study-resource-link" href="#mock-tests">Plan your study <span>→</span></a>
+                </article>
+                <article class="study-resource-card">
+                    <div class="study-resource-top"><div class="study-resource-icon" aria-hidden="true">◎</div><span class="study-resource-tag">Self Assessment</span></div>
+                    <h3>Practice &amp; Improve</h3><p>Test your understanding, review mistakes, and identify the topics to revisit next.</p>
+                    <a class="study-resource-link" href="#mock-tests">Start practising <span>→</span></a>
+                </article>
+                <article class="study-resource-card">
+                    <div class="study-resource-top"><div class="study-resource-icon" aria-hidden="true">✦</div><span class="study-resource-tag">Smart Revision</span></div>
+                    <h3>Mind Maps &amp; Quick Revision</h3><p>Revise connected ideas at a glance and make complex topics easier to remember.</p>
+                    <a class="study-resource-link" href="#mind-maps">Explore mind maps <span>→</span></a>
+                </article>
             </div>
-            <div class="podium-wrap">
-                <div class="podium-col rank-2">
-                    <div class="podium-avatar">🥈</div>
-                    <div style="font-weight:700; font-size:0.95rem;">Vikram Shekhawat</div>
-                    <div style="font-size:0.75rem; color:var(--on-surface-variant);">Jaipur, Rajasthan</div>
-                    <div class="podium-stand" style="height:120px;">
-                        <div
-                            style="font-size:1.35rem; font-weight:800; color:var(--primary); font-family:'JetBrains Mono', monospace;">
-                            188<small style="font-size:0.8rem;">/200</small></div>
-                        <div style="font-size:0.75rem; color:var(--on-surface-variant); margin-top:0.3rem;">Accuracy:
-                            94%</div>
-                    </div>
-                </div>
-                <div class="podium-col rank-1">
-                    <div class="podium-avatar">
-                        <span class="crown">👑</span>
-                        🥇
-                    </div>
-                    <div style="font-weight:800; font-size:1.08rem;">Aaradhya Saxena</div>
-                    <div style="font-size:0.75rem; color:var(--primary); font-weight:700;">Delhi • AIR 1 Pace</div>
-                    <div class="podium-stand" style="height:155px;">
-                        <div
-                            style="font-size:1.55rem; font-weight:800; color:var(--primary); font-family:'JetBrains Mono', monospace;">
-                            194<small style="font-size:0.8rem;">/200</small></div>
-                        <div style="font-size:0.78rem; font-weight:700; color:#16a34a; margin-top:0.35rem;">Accuracy:
-                            97% • 48d Streak</div>
-                    </div>
-                </div>
-                <div class="podium-col rank-3">
-                    <div class="podium-avatar">🥉</div>
-                    <div style="font-weight:700; font-size:0.95rem;">Kavya Ranganathan</div>
-                    <div style="font-size:0.75rem; color:var(--on-surface-variant);">Chennai, TN</div>
-                    <div class="podium-stand" style="height:105px;">
-                        <div
-                            style="font-size:1.35rem; font-weight:800; color:var(--primary); font-family:'JetBrains Mono', monospace;">
-                            184<small style="font-size:0.8rem;">/200</small></div>
-                        <div style="font-size:0.75rem; color:var(--on-surface-variant); margin-top:0.3rem;">Accuracy:
-                            92%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="leaderboard-table-wrap">
-            <table class="leaderboard-table">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Candidate</th>
-                        <th>Origin / State</th>
-                        <th>Mock Score</th>
-                        <th>Accuracy</th>
-                        <th>Streak</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong style="color:var(--primary);">#4</strong></td>
-                        <td><strong>Mohd. Zeeshan</strong></td>
-                        <td>Lucknow, UP</td>
-                        <td><strong style="font-family:'JetBrains Mono', monospace;">181 / 200</strong></td>
-                        <td>91.5%</td>
-                        <td><span class="streak-fire-streak">🔥 34 Days</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong style="color:var(--primary);">#5</strong></td>
-                        <td><strong>Sneha Mukherjee</strong></td>
-                        <td>Kolkata, WB</td>
-                        <td><strong style="font-family:'JetBrains Mono', monospace;">178 / 200</strong></td>
-                        <td>89.8%</td>
-                        <td><span class="streak-fire-streak">🔥 29 Days</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong style="color:var(--primary);">#6</strong></td>
-                        <td><strong>Anil Kulkarni</strong></td>
-                        <td>Pune, Maharashtra</td>
-                        <td><strong style="font-family:'JetBrains Mono', monospace;">175 / 200</strong></td>
-                        <td>88.2%</td>
-                        <td><span class="streak-fire-streak">🔥 21 Days</span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="study-prep-strip">
+                <div><h3>Make your preparation count.</h3><p>Small, focused steps every day can build stronger preparation over time.</p></div>
+                <div class="study-prep-actions"><a class="study-prep-btn" href="#mock-tests">Take a practice test <span>→</span></a><a class="study-prep-btn secondary" href="#mind-maps">Explore revision tools</a></div>
             </div>
         </div>
     </section>
@@ -5451,7 +6658,7 @@
             <div class="section-header">
                 <div class="sub-badge">❓ RESOLVE YOUR DOUBTS</div>
                 <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Everything you need to know about Samiksha AI, 1v1 Aspirant Battles, our ₹99 Cadre Library, and AI-grounded answer evaluation.</p>
+                <p class="section-subtitle">Everything you need to know about Aspirora AI, 1v1 Aspirant Battles, our ₹99 Cadre Library, and AI-grounded answer evaluation.</p>
             </div>
 
             <!-- Category Filter Tabs -->
@@ -5479,7 +6686,7 @@
                             The <strong>1v1 Aspirant Battle Arena</strong> is a real-time, AI-moderated cognitive duel that pairs you against another serious UPSC civil services candidate from anywhere in India. Each duel features rapid-fire Prelims MCQs and Mains concept checks with an active countdown timer, real-time latency matching, and instant rubric explanations. 
                         </p>
                         <p style="margin-top:0.5rem;">
-                            This arena opens exclusively when you upgrade to the <strong>Samiksha AI Premium</strong> membership. Taking Premium immediately unlocks access to unlimited ranked duels, private peer battle rooms, and National ELO points that boost your position on the All-India Leaderboard.
+                            This arena opens exclusively when you upgrade to the <strong>Aspirora AI Premium</strong> membership. Taking Premium immediately unlocks access to unlimited ranked duels, private peer battle rooms, and National ELO points that boost your position on the All-India Leaderboard.
                         </p>
                     </div>
                 </div>
@@ -5505,13 +6712,13 @@
                     <div class="faq-question" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">
                         <div class="faq-q-text">
                             <span class="faq-num">03.</span>
-                            <span>How does Samiksha AI evaluate GS Mains answers with zero hallucinations?</span>
+                            <span>How does Aspirora AI evaluate GS Mains answers with zero hallucinations?</span>
                         </div>
                         <div class="faq-toggle-icon">+</div>
                     </div>
                     <div class="faq-answer">
                         <p>
-                            Unlike generic consumer chatbots, Samiksha AI operates on a sovereign fine-tuned cognitive model constrained strictly by official UPSC evaluation standards. It evaluates your handwritten or typed answers across four core pillars:
+                            Unlike generic consumer chatbots, Aspirora AI operates on a sovereign fine-tuned cognitive model constrained strictly by official UPSC evaluation standards. It evaluates your handwritten or typed answers across four core pillars:
                         </p>
                         <ul style="margin:0.5rem 0 0.5rem 1.2rem; list-style-type:disc;">
                             <li><strong>Directive Compliance:</strong> Rigorous adherence to command words (Critically Examine, Elucidate, Evaluate).</li>
@@ -5555,7 +6762,7 @@
                     </div>
                     <div class="faq-answer">
                         <p>
-                            Yes! With Samiksha Premium, you can either select <strong>Quick Match</strong> to be instantly paired with an aspirant of similar national ELO rating across India, or generate a <strong>Private Room Code</strong>. Share the 6-digit code with your study group or library peers to initiate focused syllabus duels (e.g., 50 questions strictly on Environment &amp; Ecology).
+                            Yes! With Aspirora Premium, you can either select <strong>Quick Match</strong> to be instantly paired with an aspirant of similar national ELO rating across India, or generate a <strong>Private Room Code</strong>. Share the 6-digit code with your study group or library peers to initiate focused syllabus duels (e.g., 50 questions strictly on Environment &amp; Ecology).
                         </p>
                     </div>
                 </div>
@@ -5565,13 +6772,13 @@
                     <div class="faq-question" onclick="toggleFaq(this)" tabindex="0" role="button" aria-expanded="false">
                         <div class="faq-q-text">
                             <span class="faq-num">06.</span>
-                            <span>Is Samiksha AI compatible with iOS, Android tablets, and desktop browsers?</span>
+                            <span>Is Aspirora AI compatible with iOS, Android tablets, and desktop browsers?</span>
                         </div>
                         <div class="faq-toggle-icon">+</div>
                     </div>
                     <div class="faq-answer">
                         <p>
-                            Yes. Samiksha AI is built with responsive mobile-first architecture and Progressive Web App (PWA) support. You can study seamless mind maps, test your quick recall in 1v1 battles, and submit photographed handwritten answer scripts directly via your mobile phone camera, tablet stylus, or laptop browser.
+                            Yes. Aspirora AI is built with responsive mobile-first architecture and Progressive Web App (PWA) support. You can study seamless mind maps, test your quick recall in 1v1 battles, and submit photographed handwritten answer scripts directly via your mobile phone camera, tablet stylus, or laptop browser.
                         </p>
                     </div>
                 </div>
@@ -5599,7 +6806,7 @@
                     <h4 style="font-size:1.1rem; font-weight:700; margin-bottom:0.25rem;">Still have questions about your preparation?</h4>
                     <p style="font-size:0.86rem; color:var(--on-surface-variant);">Our senior cadre academic mentors and AI specialists are available 24/7 on Telegram and Email.</p>
                 </div>
-                <a class="btn btn-secondary" href="mailto:mentorship@samiksha.ai">
+                <a class="btn btn-secondary" href="mailto:mentorship@civora.ai">
                     <span>Ask Our Academic Cadre →</span>
                 </a>
             </div>
@@ -5629,10 +6836,13 @@
                 <p class="section-subtitle">Explore authentic score breakdowns, optional subject strategies, and marks
                     elevation trajectories from verified UPSC rankers.</p>
             </div>
+            <div class="topper-ticker-hint"><span class="ticker-dot"></span> Topper names & profiles scroll continuously · hover or focus to pause</div>
             <div class="topper-cadre-layout">
-                <!-- Left: Sleek Interactive Topper Selector List -->
-                <div class="topper-selector-col" id="topperSelectorList">
-                    <!-- Injected by JavaScript -->
+                <!-- Interactive, continuously scrolling verified-ranker selector -->
+                <div class="topper-ticker-viewport" aria-label="Scrolling topper profiles">
+                    <div class="topper-selector-col" id="topperSelectorList" aria-label="Topper profiles; horizontally scrolling">
+                        <!-- Injected by JavaScript -->
+                    </div>
                 </div>
                 <!-- Right: Active Topper Deep-Dive Dossier & Scorecard -->
                 <div class="dossier-card" id="topperDossier">
@@ -5658,9 +6868,39 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Authentic Topper Quote -->
+
+                    <!-- Interactive animated origin explorer -->
+                    <div class="topper-origin-explorer" aria-label="Interactive topper origin explorer">
+                        <div class="topper-origin-map" role="img" aria-label="Stylized map of India showing the selected topper's origin">
+                            <div class="topper-map-grid"></div>
+                            <div class="origin-map-tag">BHARAT · TOPPER ORIGINS</div>
+                            <svg class="india-schematic" viewBox="0 0 180 250" aria-hidden="true">
+                                <path d="M71 8 L92 15 105 31 125 38 132 54 151 63 145 79 157 91 143 105 137 124 124 139 116 157 105 174 99 194 87 217 76 239 66 220 61 199 49 184 43 164 31 149 36 132 25 117 34 101 28 86 40 71 45 53 57 41 61 23 Z"/>
+                                <path d="M61 23 L78 33 91 47 109 57 125 56 M36 132 L58 127 78 139 96 136 124 139 M43 164 L65 160 84 174 105 174 M49 184 L70 190 87 217" fill="none" stroke="rgba(255,255,255,.23)" stroke-width="1"/>
+                            </svg>
+                            <div class="origin-pin" id="topperOriginPin" style="left:51%;top:43%">
+                                <span class="origin-pin-dot"></span><span class="origin-pin-label" id="topperOriginPinLabel">New Delhi</span>
+                            </div>
+                            <div class="origin-map-live">PROFILE SELECTED</div>
+                        </div>
+                        <div class="origin-profile-side">
+                            <div class="origin-eyebrow">Explore their journey</div>
+                            <div class="origin-big-place" id="topperOriginTitle">From New Delhi to the civil services</div>
+                            <div class="origin-desc" id="topperOriginDescription">Explore the selected profile's hometown, service and scorecard. Choose another topper to move the map pin.</div>
+                            <div class="origin-stat-row">
+                                <div class="origin-stat"><strong id="topperOriginRank">AIR 3</strong><span>All-India Rank</span></div>
+                                <div class="origin-stat"><strong id="topperOriginService">IAS</strong><span>Selected service</span></div>
+                                <div class="origin-stat origin-area-count"><strong id="topperOriginSelections">1</strong><span id="topperOriginSelectionsLabel">Profiles from this area</span></div>
+                                <div class="origin-stat origin-state-count"><strong id="topperOriginStateSelections">1</strong><span id="topperOriginStateSelectionsLabel">State profiles listed</span></div>
+                            </div>
+                            <button type="button" class="origin-action" onclick="document.getElementById('dossierGrandTotal')?.scrollIntoView({behavior:'smooth',block:'center'})">Explore score breakdown <span aria-hidden="true">↘</span></button>
+                            <p class="topper-map-note">Illustrative India graphic · location markers are approximate and based on the profile text.</p>
+                        </div>
+                    </div>
+
+                                        <!-- Authentic Topper Quote -->
                     <div class="dossier-quote-box" id="dossierQuote">
-                        "Samiksha AI's Mains Answer Auditor transformed my GS-2 score from 84 to 122. The instant
+                        "Aspirora AI's Mains Answer Auditor transformed my GS-2 score from 84 to 122. The instant
                         detection of missing committee recommendations gave me the edge to crack top 10."
                     </div>
                     <!-- 4-Part UPSC Marks Breakdown -->
@@ -5752,13 +6992,11 @@
                 <div class="sub-badge">🏆 BHARAT'S MOST PREFERRED UPSC COGNITIVE PLATFORM</div>
                 <h2 class="section-title"> Aspirants Prefer This App Over Traditional Coaching</h2>
                 <p class="section-subtitle">
-                    Over 150,000+ candidates replaced bulky ₹1.5L coaching programs with Samiksha AI. Discover why top
-                    rankers prefer our zero-hallucination ecosystem — followed by our audited selections growth from
-                    2021 to 2026.
+                    Smarter tools. Focused practice. One goal: UPSC success.
                 </p>
             </div>
 
-            <!-- 6 Core Pillars: Why Students Prefer Samiksha AI -->
+            <!-- 6 Core Pillars: Why Students Prefer Aspirora AI -->
             <div class="why-prefer-grid">
                 <!-- Reason 1: ₹99 Lifetime Pass -->
                 <div class="why-prefer-card">
@@ -5767,14 +7005,13 @@
                             <div class="why-prefer-icon-wrap">📚</div>
                             <span class="why-prefer-tag">99.3% Cost Saving</span>
                         </div>
-                        <h4 class="why-prefer-title">₹99 Lifetime Pass vs. ₹1.5L Delhi Coaching</h4>
+                        <h4 class="why-prefer-title">Premium Learning for Just ₹99</h4>
                         <p class="why-prefer-desc">
-                            Unlock Laxmikanth, Spectrum, Ramesh Singh &amp; 50+ NCERTs digitally with zero renewal fees.
-                            Demolishing prohibitive economic barriers for Bharat's grassroots aspirants.
+                            50+ essential books and NCERTs. One affordable pass.
                         </p>
                     </div>
                     <div class="why-prefer-comp-tag">
-                        ✓ Saves ₹1,50,000+ in coaching fees
+                        ✓ Learn more for less
                     </div>
                 </div>
 
@@ -5785,15 +7022,13 @@
                             <div class="why-prefer-icon-wrap">⚡</div>
                             <span class="why-prefer-tag">Zero Waiting Time</span>
                         </div>
-                        <h4 class="why-prefer-title">90-Sec Mains Answer Auditor with Authentic Rubrics</h4>
+                        <h4 class="why-prefer-title">Get Mains Feedback in 90 Seconds</h4>
                         <p class="why-prefer-desc">
-                            Don't wait 3 weeks for test-series evaluation. Upload written QCA answer scripts and receive
-                            immediate multi-parameter scores, committee recommendations (Punchhi, Sarkaria, 2nd ARC),
-                            and elevation tags.
+                            Get quick scores, clear feedback, and ways to improve your answers.
                         </p>
                     </div>
                     <div class="why-prefer-comp-tag">
-                        ✓ 90-sec instant turnaround vs 21 days
+                        ✓ Faster feedback, better practice
                     </div>
                 </div>
 
@@ -5804,15 +7039,13 @@
                             <div class="why-prefer-icon-wrap">🧠</div>
                             <span class="why-prefer-tag">4x Retention</span>
                         </div>
-                        <h4 class="why-prefer-title">Interactive Synapse Mind Maps for GS 1 to 4</h4>
+                        <h4 class="why-prefer-title">Visual Mind Maps for GS I–IV</h4>
                         <p class="why-prefer-desc">
-                            Replace bulky 1,000-page notes with dynamic hover knowledge webs. Visually connect
-                            constitutional articles, judicial precedents, and economic schemes for rapid exam-hall
-                            recall.
+                            Connect key concepts, cases, articles, and schemes at a glance.
                         </p>
                     </div>
                     <div class="why-prefer-comp-tag">
-                        ✓ 100% syllabus interconnected &amp; active
+                        ✓ See how topics connect
                     </div>
                 </div>
 
@@ -5823,14 +7056,13 @@
                             <div class="why-prefer-icon-wrap">🎯</div>
                             <span class="why-prefer-tag">Prelims Shield</span>
                         </div>
-                        <h4 class="why-prefer-title">Prelims Elimination Lab: Curing Negative Marking</h4>
+                        <h4 class="why-prefer-title">Master Prelims Elimination</h4>
                         <p class="why-prefer-desc">
-                            Neural PYQ deconstruction solves questions without options. Master the 5-rule elimination
-                            matrix to turn 50/50 dilemmas into guaranteed marks, lifting GS-1 scores by +28 marks.
+                            Use PYQ-based strategies to narrow options and avoid careless guesses.
                         </p>
                     </div>
                     <div class="why-prefer-comp-tag">
-                        ✓ Negative marking reduced by 74%
+                        ✓ Practice smarter, guess less
                     </div>
                 </div>
 
@@ -5841,15 +7073,13 @@
                             <div class="why-prefer-icon-wrap">🎖️</div>
                             <span class="why-prefer-tag">Zero Hallucination</span>
                         </div>
-                        <h4 class="why-prefer-title">Audited Top 10 Rankers &amp; Scorecard Dossiers</h4>
+                        <h4 class="why-prefer-title">Learn from Topper Strategies</h4>
                         <p class="why-prefer-desc">
-                            Unlike fake coaching claims, explore authentic evaluated answer sheets, marks crucible
-                            breakdowns, and cadre allocation dossiers from AIR 3 Aditya Srivastava, AIR 11 Priya Sharma,
-                            and 46+ Top 100 rankers.
+                            Explore topper profiles, preparation insights, and score breakdowns.
                         </p>
                     </div>
                     <div class="why-prefer-comp-tag">
-                        ✓ 100% verified UPSC marksheets &amp; cadre
+                        ✓ Insights from topper journeys
                     </div>
                 </div>
 
@@ -5860,15 +7090,13 @@
                             <div class="why-prefer-icon-wrap">🔥</div>
                             <span class="why-prefer-tag">Daily Discipline</span>
                         </div>
-                        <h4 class="why-prefer-title">Real-Time State Leaderboard &amp; Daily Streaks</h4>
+                        <h4 class="why-prefer-title">Track Progress &amp; Build Streaks</h4>
                         <p class="why-prefer-desc">
-                            Compete daily with 14,200+ active aspirants across 28 states. Track your accuracy
-                            percentile, maintain fire streaks, and measure your preparation trajectory against AIR 1
-                            pace.
+                            Track accuracy, keep your daily streak alive, and compare your progress.
                         </p>
                     </div>
                     <div class="why-prefer-comp-tag">
-                        ✓ Live rank tracking across 28 states
+                        ✓ Stay consistent every day
                     </div>
                 </div>
             </div>
@@ -6141,12 +7369,15 @@
                 <!-- Column 1: Brand & Philosophy -->
                 <div class="footer-col-brand">
                     <a class="brand-logo" href="#" style="margin-bottom:0.75rem; color:#ffffff;">
-                        <svg height="34" viewbox="0 0 40 40" width="34">
-                            <rect fill="#ff6a00" height="40" rx="10" width="40"></rect>
-                            <path d="M20 8L23.5 15L31 16L25.5 21.5L27 29L20 24.5L13 29L14.5 21.5L9 16L16.5 15L20 8Z"
-                                fill="#fff"></path>
-                        </svg>
-                        <span class="brand-text">SAMIKSHA<span class="brand-highlight" style="color:#ff6a00;">.AI</span></span>
+                        <svg height="34" viewBox="0 0 40 40" width="34" role="img" aria-label="Aspirora AI logo">
+                    <defs><linearGradient id="aspiroraLogoGradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff9f43"/><stop offset="100%" stop-color="#ea580c"/></linearGradient></defs>
+                    <rect x="1" y="1" width="38" height="38" rx="12" fill="url(#aspiroraLogoGradient)"/>
+                    <path d="M7.5 20.5Q13.8 17.7 19.5 22V31Q13.5 27.8 7.5 30Z" fill="#fff"/>
+                    <path d="M32.5 20.5Q26.2 17.7 20.5 22V31Q26.5 27.8 32.5 30Z" fill="#fff" opacity=".88"/>
+                    <path d="M20 7.2L22.5 13.1L28.8 15.5L22.5 17.8L20 23.8L17.6 17.8L11.3 15.5L17.6 13.1Z" fill="#fff"/>
+                    <circle cx="30.8" cy="8.5" r="2" fill="#fff" opacity=".9"/>
+                </svg>
+                        <span class="brand-text">ASPIRORA<span class="brand-highlight" style="color:#ff6a00;">.AI</span></span>
                     </a>
                     <p>
                         The Sovereign Cognitive Operating System for the Union Public Service Commission Civil Services
@@ -6235,15 +7466,15 @@
                 <div>
                     <div class="footer-col-title">Support &amp; Contact</div>
                     <ul class="footer-link-list">
-                        <li><a href="#">About Samiksha AI</a></li>
+                        <li><a href="#">About Aspirora AI</a></li>
                         <li><a href="#faq">Help &amp; FAQs</a></li>
                         <li><a href="#">Privacy &amp; Data Sovereignty</a></li>
                         <li><a href="#">Terms &amp; Refund Guarantee</a></li>
                         <li><a href="#">Grievance Redressal Officer</a></li>
                         <li style="margin-top:0.4rem; font-size:0.8rem; color:var(--on-surface);">
                             <strong>Faculty Mentorship:</strong><br />
-                            <a href="mailto:mentorship@samiksha.ai"
-                                style="color:var(--primary); font-family:'JetBrains Mono', monospace;">mentorship@samiksha.ai</a>
+                            <a href="mailto:mentorship@civora.ai"
+                                style="color:var(--primary); font-family:'JetBrains Mono', monospace;">mentorship@civora.ai</a>
                         </li>
                         <li style="font-size:0.75rem; color:var(--on-surface-variant); line-height:1.4;">
                             📍 Barakhamba Road, Connaught Place, New Delhi 110001
@@ -6255,7 +7486,7 @@
             <!-- Bottom Legal Bar, Disclaimer & Live System Status -->
             <div class="footer-legal-bar">
                 <div class="footer-legal-disclaimer">
-                    <strong>Statutory Disclaimer:</strong> Samiksha AI is an independent academic research and
+                    <strong>Statutory Disclaimer:</strong> Aspirora AI is an independent academic research and
                     educational technology initiative.
                     It is not affiliated with, endorsed by, or representing the Union Public Service Commission (UPSC),
                     Department of Personnel and Training (DoPT),
@@ -6274,7 +7505,7 @@
             </div>
 
             <div style="text-align:center; margin-top:1.8rem; font-size:0.76rem; color:#64748b;">
-                © 2026 Samiksha AI Technologies Private Limited. All Rights Reserved. Crafted with pride for Bharat's
+                © 2026 Aspirora AI Technologies Private Limited. All Rights Reserved. Crafted with pride for Bharat's
                 future civil servants.
             </div>
         </div>
@@ -6301,7 +7532,7 @@
                 <div class="premium-crown-icon">👑</div>
                 <div class="sub-badge" style="margin-bottom:0.4rem;">SOVEREIGN CADRE MEMBERSHIP</div>
                 <h3 style="color:var(--primary); font-size:1.55rem; margin-bottom:0.4rem; font-weight:800;">
-                    Samiksha AI Premium
+                    Aspirora AI Premium
                 </h3>
                 <p style="color:var(--on-surface-variant); font-size:0.92rem; line-height:1.5; margin-bottom:1.5rem;">
                     Step into Bharat's most elite civil service preparation tier. Get unlimited real-time 1v1 battles, AI answer grading, and lifetime library access.
@@ -6356,6 +7587,20 @@
     </div>
     <!-- JavaScript Core -->
     <script>
+        // Duplicate the battle cards once so the horizontal ticker can loop without a visible end.
+        document.addEventListener('DOMContentLoaded', () => {
+            const battleTrack = document.getElementById('otherBattlesTrack');
+            if (!battleTrack || battleTrack.dataset.loopReady) return;
+            const originalCards = Array.from(battleTrack.children);
+            originalCards.forEach((card) => {
+                const clone = card.cloneNode(true);
+                clone.setAttribute('aria-hidden', 'true');
+                clone.querySelectorAll('[id]').forEach((node) => node.removeAttribute('id'));
+                battleTrack.appendChild(clone);
+            });
+            battleTrack.dataset.loopReady = 'true';
+        });
+
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
             loadMindMap('fr');
@@ -6405,24 +7650,32 @@
 
         function initMobileNav() {
             document.querySelectorAll('.nav-menu .nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    closeMobileNav();
-                });
+                link.addEventListener('click', () => closeMobileNav());
             });
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') {
                     closeMobileNav();
+                    const trigger = document.getElementById('navHamburger');
+                    if (trigger && window.matchMedia('(max-width: 1460px)').matches) trigger.focus();
                 }
             });
+            // Never leave the page scroll-locked if the viewport grows back to desktop width.
+            window.addEventListener('resize', () => {
+                if (window.matchMedia('(min-width: 1461px)').matches) closeMobileNav();
+            }, { passive: true });
         }
 
         /* Theme Toggle */
         function initTheme() {
             const themeBtn = document.getElementById('themeBtn');
             const html = document.documentElement;
+            const savedTheme = localStorage.getItem('civora-theme');
+            if (savedTheme === 'dark' || savedTheme === 'light') html.setAttribute('data-theme', savedTheme);
+            themeBtn.textContent = html.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
             themeBtn.addEventListener('click', () => {
                 const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
                 html.setAttribute('data-theme', next);
+                localStorage.setItem('civora-theme', next);
                 themeBtn.textContent = next === 'dark' ? '☀️' : '🌙';
             });
         }
@@ -6661,6 +7914,13 @@
 
             const feedback = document.getElementById('battleAiFeedback');
             if (feedback) feedback.style.display = 'block';
+            const otherBattles = document.getElementById('otherBattlesPanel');
+            if (otherBattles) {
+                otherBattles.classList.remove('battle-feed-highlight');
+                void otherBattles.offsetWidth;
+                otherBattles.classList.add('battle-feed-highlight');
+                window.setTimeout(() => otherBattles.classList.remove('battle-feed-highlight'), 900);
+            }
         }
 
         function autoTimeoutBattle() {
@@ -6824,10 +8084,11 @@
             const tree = document.getElementById('mindmapTree');
             tree.innerHTML = `
         <div class="root-node">🌐 ${data.root}</div>
-        <svg class="synapse-svg" viewBox="0 0 600 45" fill="none" preserveAspectRatio="none">
-          <path d="M 60 5 C 60 25, 100 35, 100 45" class="synapse-line" />
-          <path d="M 60 5 C 60 25, 300 35, 300 45" class="synapse-line" />
-          <path d="M 60 5 C 60 25, 500 35, 500 45" class="synapse-line" />
+        <svg class="synapse-svg" viewBox="0 0 600 45" fill="none" preserveAspectRatio="none" aria-hidden="true">
+          <!-- All branches originate from the exact horizontal centre of the topic/root card -->
+          <path d="M 300 0 C 300 22, 100 22, 100 45" class="synapse-line" />
+          <path d="M 300 0 C 300 18, 300 28, 300 45" class="synapse-line" />
+          <path d="M 300 0 C 300 22, 500 22, 500 45" class="synapse-line" />
         </svg>
         <div class="branches-grid">
           ${data.branches.map(b => `
@@ -6921,7 +8182,7 @@
                 origin: "New Delhi",
                 optional: "Electrical Engg",
                 attempt: "2nd Attempt",
-                quote: "\"Samiksha AI's Mains Answer Auditor transformed my GS-2 score from 84 to 122. The instant detection of missing committee recommendations gave me the edge to crack top 10.\"",
+                quote: "\"Aspirora AI's Mains Answer Auditor transformed my GS-2 score from 84 to 122. The instant detection of missing committee recommendations gave me the edge to crack top 10.\"",
                 gsTotal: 448,
                 optTotal: 296,
                 essayTotal: 142,
@@ -6996,7 +8257,7 @@
                 origin: "Kolkata, WB",
                 optional: "Sociology",
                 attempt: "2nd Attempt",
-                quote: "\"The 4-Paper Knowledge Atlas helped me connect Geography and Tribal Movements with Ethics in my Essay. I scored 142 in Essay alone using Samiksha's multi-lens thesis frames.\"",
+                quote: "\"The 4-Paper Knowledge Atlas helped me connect Geography and Tribal Movements with Ethics in my Essay. I scored 142 in Essay alone using Aspirora's multi-lens thesis frames.\"",
                 gsTotal: 438,
                 optTotal: 280,
                 essayTotal: 142,
@@ -7034,6 +8295,96 @@
                 qcaSnippet: `"Applying <span class='qca-annotation-pill'>NPM principles (David Osborne)</span> to digital service delivery architectures such as <span class='qca-annotation-boost'>India Stack & DBT</span> validated public administrative efficiency."`,
                 qcaRubric: "MODEL RUBRIC GROUNDING: 97.6%",
                 auditId: "#UPSC-QCA-2024-644"
+            },
+            {
+                id: "meera-demo",
+                name: "Meera Nair",
+                air: "AIR 68",
+                service: "IAS",
+                serviceClass: "service-ias",
+                avatar: "👩‍💼",
+                elevation: "+31 Marks",
+                origin: "Kochi, Kerala",
+                optional: "Anthropology",
+                attempt: "2nd Attempt",
+                quote: "Illustrative demo profile: a consistent revision plan, answer-writing practice, and feedback helped turn preparation into measurable progress.",
+                gsTotal: 426, optTotal: 286, essayTotal: 139, ptTotal: 188, grandTotal: 1039,
+                pGS: "Demo Metric", pOpt: "Demo Metric", pEssay: "Demo Metric", pPT: "Demo Metric",
+                qcaSnippet: `"Demo answer excerpt: connect core concepts with relevant examples, constitutional provisions, and balanced analysis."`,
+                qcaRubric: "ILLUSTRATIVE DEMO PROFILE",
+                auditId: "#DEMO-TOPPER-006"
+            },
+            {
+                id: "arjun-demo",
+                name: "Arjun Patel",
+                air: "AIR 74",
+                service: "IPS",
+                serviceClass: "service-ips",
+                avatar: "👨‍✈️",
+                elevation: "+27 Marks",
+                origin: "Ahmedabad, Gujarat",
+                optional: "Public Administration",
+                attempt: "3rd Attempt",
+                quote: "Illustrative demo profile: focused mock tests and careful analysis of mistakes can make preparation more structured.",
+                gsTotal: 414, optTotal: 291, essayTotal: 134, ptTotal: 186, grandTotal: 1025,
+                pGS: "Demo Metric", pOpt: "Demo Metric", pEssay: "Demo Metric", pPT: "Demo Metric",
+                qcaSnippet: `"Demo answer excerpt: structure the response around the issue, evidence, options, and a practical conclusion."`,
+                qcaRubric: "ILLUSTRATIVE DEMO PROFILE",
+                auditId: "#DEMO-TOPPER-007"
+            },
+            {
+                id: "sneha-demo",
+                name: "Sneha Iyer",
+                air: "AIR 89",
+                service: "IAS",
+                serviceClass: "service-ias",
+                avatar: "👩‍💼",
+                elevation: "+30 Marks",
+                origin: "Chennai, Tamil Nadu",
+                optional: "Economics",
+                attempt: "2nd Attempt",
+                quote: "Illustrative demo profile: concise notes, repeated revision, and timed answer practice helped keep the study plan manageable.",
+                gsTotal: 421, optTotal: 283, essayTotal: 141, ptTotal: 184, grandTotal: 1029,
+                pGS: "Demo Metric", pOpt: "Demo Metric", pEssay: "Demo Metric", pPT: "Demo Metric",
+                qcaSnippet: `"Demo answer excerpt: use a clear argument, support it with examples, and acknowledge relevant limitations."`,
+                qcaRubric: "ILLUSTRATIVE DEMO PROFILE",
+                auditId: "#DEMO-TOPPER-008"
+            },
+            {
+                id: "vikram-demo",
+                name: "Vikram Singh",
+                air: "AIR 103",
+                service: "IFS",
+                serviceClass: "service-ifs",
+                avatar: "👨‍💼",
+                elevation: "+25 Marks",
+                origin: "Jaipur, Rajasthan",
+                optional: "History",
+                attempt: "1st Attempt",
+                quote: "Illustrative demo profile: linking historical context with present-day examples can make answers more analytical and relevant.",
+                gsTotal: 409, optTotal: 289, essayTotal: 136, ptTotal: 181, grandTotal: 1015,
+                pGS: "Demo Metric", pOpt: "Demo Metric", pEssay: "Demo Metric", pPT: "Demo Metric",
+                qcaSnippet: `"Demo answer excerpt: establish the timeline, explain causes and consequences, then add a balanced assessment."`,
+                qcaRubric: "ILLUSTRATIVE DEMO PROFILE",
+                auditId: "#DEMO-TOPPER-009"
+            },
+            {
+                id: "kavya-demo",
+                name: "Kavya Reddy",
+                air: "AIR 117",
+                service: "IAS",
+                serviceClass: "service-ias",
+                avatar: "👩‍💼",
+                elevation: "+28 Marks",
+                origin: "Hyderabad, Telangana",
+                optional: "Political Science & IR",
+                attempt: "2nd Attempt",
+                quote: "Illustrative demo profile: connecting theory to current affairs and revising with feedback can improve answer clarity.",
+                gsTotal: 416, optTotal: 287, essayTotal: 138, ptTotal: 180, grandTotal: 1021,
+                pGS: "Demo Metric", pOpt: "Demo Metric", pEssay: "Demo Metric", pPT: "Demo Metric",
+                qcaSnippet: `"Demo answer excerpt: define the concept, explain its implications, and support the conclusion with a relevant example."`,
+                qcaRubric: "ILLUSTRATIVE DEMO PROFILE",
+                auditId: "#DEMO-TOPPER-010"
             }
         ];
 
@@ -7043,8 +8394,8 @@
             const listContainer = document.getElementById('topperSelectorList');
             if (!listContainer) return;
 
-            listContainer.innerHTML = cadreToppers.map((t, idx) => `
-        <div class="cadre-card-item ${idx === 0 ? 'active' : ''}" onclick="selectCadreTopper(${idx})">
+            const topperCards = cadreToppers.map((t, idx) => `
+        <div class="cadre-card-item ${idx === 0 ? 'active' : ''}" onclick="selectCadreTopper(${idx})" tabindex="0" role="button" aria-label="View ${t.name} profile">
           <div class="cadre-avatar-wrap">${t.avatar}</div>
           <div class="cadre-info-main">
             <div class="cadre-name-row">
@@ -7058,6 +8409,8 @@
           </div>
         </div>
       `).join('');
+            /* Duplicate the sequence so the topper-name ticker loops without a visible jump. */
+            listContainer.innerHTML = topperCards + topperCards;
 
             updateDossierView(cadreToppers[0]);
         }
@@ -7065,7 +8418,7 @@
         function selectCadreTopper(index) {
             currentTopperIndex = index;
             document.querySelectorAll('.cadre-card-item').forEach((item, i) => {
-                item.classList.toggle('active', i === index);
+                item.classList.toggle('active', (i % cadreToppers.length) === index);
             });
             const dossier = document.getElementById('topperDossier');
             dossier.style.opacity = '0.3';
@@ -7088,6 +8441,54 @@
             document.getElementById('dossierAttempt').textContent = t.attempt;
             document.getElementById('dossierOrigin').textContent = t.origin;
             document.getElementById('dossierQuote').textContent = t.quote;
+            const originTitle = document.getElementById('topperOriginTitle');
+            const originPinLabel = document.getElementById('topperOriginPinLabel');
+            const originPin = document.getElementById('topperOriginPin');
+            const originRank = document.getElementById('topperOriginRank');
+            const originService = document.getElementById('topperOriginService');
+            const originDescription = document.getElementById('topperOriginDescription');
+            if (originTitle) originTitle.textContent = `From ${t.origin} to the civil services`;
+            if (originPinLabel) originPinLabel.textContent = t.origin;
+            if (originRank) originRank.textContent = t.air;
+            if (originService) originService.textContent = t.service;
+            if (originDescription) originDescription.textContent = `${t.name} · ${t.optional} optional · ${t.attempt}. Explore the profile and marks breakdown below.`;
+            // Counts reflect only the topper profiles currently listed on this page; they are not official state-wise UPSC statistics.
+            const areaSelections = document.getElementById('topperOriginSelections');
+            const areaSelectionsLabel = document.getElementById('topperOriginSelectionsLabel');
+            if (areaSelections) {
+                const selectedArea = (t.origin || '').split(',').map(part => part.trim().toLowerCase()).filter(Boolean);
+                const count = cadreToppers.filter(profile => {
+                    const profileArea = (profile.origin || '').split(',').map(part => part.trim().toLowerCase()).filter(Boolean);
+                    return selectedArea.some(area => profileArea.includes(area));
+                }).length;
+                areaSelections.textContent = count;
+            }
+            if (areaSelectionsLabel) areaSelectionsLabel.textContent = `Profiles listed from ${((t.origin || 'this area').split(',')[0] || 'this area').trim()}`;
+            // State-level count is calculated from the topper profiles currently listed on this page.
+            const stateSelections = document.getElementById('topperOriginStateSelections');
+            const stateSelectionsLabel = document.getElementById('topperOriginStateSelectionsLabel');
+            const stateAliases = {
+                'up': 'uttar pradesh', 'uttar pradesh': 'uttar pradesh',
+                'wb': 'west bengal', 'west bengal': 'west bengal',
+                'new delhi': 'delhi', 'delhi': 'delhi',
+                'rajasthan': 'rajasthan', 'karnataka': 'karnataka'
+            };
+            const originParts = (t.origin || '').split(',').map(part => part.trim()).filter(Boolean);
+            const rawState = originParts.length > 1 ? originParts[originParts.length - 1].toLowerCase() : originParts[0]?.toLowerCase() || 'unknown';
+            const selectedState = stateAliases[rawState] || rawState;
+            const stateCount = cadreToppers.filter(profile => {
+                const parts = (profile.origin || '').split(',').map(part => part.trim().toLowerCase()).filter(Boolean);
+                const candidate = parts.length > 1 ? parts[parts.length - 1] : (parts[0] || 'unknown');
+                return (stateAliases[candidate] || candidate) === selectedState;
+            }).length;
+            if (stateSelections) stateSelections.textContent = stateCount;
+            if (stateSelectionsLabel) stateSelectionsLabel.textContent = `Profiles listed from ${originParts.length > 1 ? originParts[originParts.length - 1] : originParts[0] || 'this state'}`;
+            if (originPin) {
+                const place = (t.origin || '').toLowerCase();
+                const coords = place.includes('kolkata') ? [70, 42] : place.includes('bengaluru') ? [43, 68] : place.includes('delhi') ? [48, 30] : place.includes('jaipur') ? [40, 35] : place.includes('lucknow') ? [55, 39] : place.includes('mumbai') ? [34, 53] : place.includes('chennai') ? [54, 72] : [51, 43];
+                originPin.style.left = `${coords[0]}%`;
+                originPin.style.top = `${coords[1]}%`;
+            }
 
             // Numerical scores
             document.getElementById('dossierGS').textContent = t.gsTotal;
@@ -7177,11 +8578,11 @@
             {
                 year: "2021",
                 cohort: "2021 COHORT",
-                title: "2021 Cohort — Genesis of Samiksha AI Engine",
+                title: "2021 Cohort — Genesis of Aspirora AI Engine",
                 milestone: "142",
                 flagship: "AIR 68",
                 elevation: "+22 Marks",
-                summary: "Inaugural rollout of Samiksha AI's cognitive neural syllabus mapping, helping 142 aspirants crack Prelims and Mains without expensive brick-and-mortar coaching."
+                summary: "Inaugural rollout of Aspirora AI's cognitive neural syllabus mapping, helping 142 aspirants crack Prelims and Mains without expensive brick-and-mortar coaching."
             },
             {
                 year: "2022",
@@ -7217,7 +8618,7 @@
                 milestone: "1,180",
                 flagship: "46 In Top 100",
                 elevation: "+41 Marks",
-                summary: "Over 312 IAS and IPS officers inducted from a single unified batch, establishing Samiksha AI as India's premier UPSC cognitive operating system."
+                summary: "Over 312 IAS and IPS officers inducted from a single unified batch, establishing Aspirora AI as India's premier UPSC cognitive operating system."
             },
             {
                 year: "2026",
@@ -7517,6 +8918,146 @@
             }
         }
     </script>
+
+<script>
+(function () {
+  const initTopperTicker = () => {
+    const track = document.getElementById('topperSelectorList');
+    if (!track || track.dataset.tickerReady === 'true') return;
+    track.dataset.tickerReady = 'true';
+    // Duplicate the profile cards to create a seamless circular ticker.
+    [...track.children].forEach(card => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      clone.tabIndex = -1;
+      track.appendChild(clone);
+    });
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let paused = false;
+    track.addEventListener('mouseenter', () => paused = true);
+    track.addEventListener('mouseleave', () => paused = false);
+    track.addEventListener('focusin', () => paused = true);
+    track.addEventListener('focusout', () => paused = false);
+    let last = 0;
+    const tick = (time) => {
+      if (!last) last = time;
+      const dt = Math.min(time - last, 40); last = time;
+      if (!paused && track.scrollWidth > track.clientWidth) {
+        track.scrollLeft += dt * 0.045;
+        const loopPoint = track.scrollWidth / 2;
+        if (track.scrollLeft >= loopPoint) track.scrollLeft -= loopPoint;
+      }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => setTimeout(initTopperTicker, 250));
+  else setTimeout(initTopperTicker, 250);
+})();
+</script>
+
+<script>
+/* Gentle scroll-linked background drift; content itself never shifts. */
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduceMotion.matches) return;
+  let scheduled = false;
+  const updateBackground = () => {
+    const scrollY = window.scrollY || window.pageYOffset || 0;
+    document.documentElement.style.setProperty('--upsc-scroll-shift', `${Math.max(-90, Math.min(0, -scrollY * 0.055))}px`);
+    scheduled = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (!scheduled) {
+      scheduled = true;
+      window.requestAnimationFrame(updateBackground);
+    }
+  }, { passive: true });
+  updateBackground();
+  reduceMotion.addEventListener?.('change', event => {
+    if (event.matches) document.documentElement.style.setProperty('--upsc-scroll-shift', '0px');
+  });
+})();
+</script>
+
+
+<script>
+/* Polished scroll motion: reveal important content once, track current section, and elevate the sticky navbar. */
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const initScrollEnhancements = () => {
+    const header = document.querySelector('.navbar');
+    const updateHeader = () => {
+      if (!header) return;
+      header.classList.toggle('is-scrolled', window.scrollY > 12);
+    };
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    // Select content that benefits from an entrance cue; avoid animating every paragraph.
+    const selectors = [
+      '.hero-title',
+      '.hero-desc',
+      '.hero-cta',
+      '.hero-metrics > div',
+      'section .section-title',
+      'section .section-subtitle',
+      '.study-materials-heading',
+      '.study-materials-lead',
+      '.study-resource-card',
+      '.why-card',
+      '.topic-item',
+      '.faq-item',
+      '.success-section .cadre-card-item',
+      '#selections .metric-card',
+      '#selections .selection-stat-card'
+    ];
+    const targets = [...new Set(selectors.flatMap(selector => Array.from(document.querySelectorAll(selector))))]
+      .filter(el => !el.closest('.nav-menu') && !el.classList.contains('scroll-reveal'));
+
+    if (reduceMotion.matches || !('IntersectionObserver' in window)) {
+      targets.forEach(el => el.classList.add('is-visible'));
+    } else {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+
+      targets.forEach((el, index) => {
+        el.classList.add('scroll-reveal');
+        // Tiny stagger within repeated cards, capped to keep the page feeling quick.
+        const siblings = el.parentElement ? Array.from(el.parentElement.children).filter(node => targets.includes(node)) : [];
+        const pos = siblings.indexOf(el);
+        el.style.setProperty('--reveal-delay', `${Math.min(Math.max(pos, 0) * 65, 260)}ms`);
+        revealObserver.observe(el);
+      });
+    }
+
+    // Highlight the link for the section currently in view on wide screens.
+    const links = Array.from(document.querySelectorAll('.navbar .nav-link[href^="#"]'));
+    const sections = links.map(link => ({ link, section: document.querySelector(link.getAttribute('href')) }))
+      .filter(item => item.section);
+    if ('IntersectionObserver' in window && sections.length && !reduceMotion.matches) {
+      const activeObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          sections.forEach(item => {
+            if (item.section === entry.target) item.link.setAttribute('aria-current', 'location');
+            else item.link.removeAttribute('aria-current');
+          });
+        });
+      }, { rootMargin: '-22% 0px -65% 0px', threshold: 0 });
+      sections.forEach(item => activeObserver.observe(item.section));
+    }
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initScrollEnhancements, { once: true });
+  else initScrollEnhancements();
+})();
+</script>
+
 </body>
 
 </html>
